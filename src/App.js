@@ -1,28 +1,44 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React  from 'react';
 import './App.css';
+import PublicRoutes from 'route/router';
+import { LocaleProvider } from "antd";
+import { IntlProvider } from "react-intl";
+import AppLocale from "./language-provider";
+import config, {
+  getCurrentLanguage
+} from "containers/language-switcher/config";
+import { createStore, applyMiddleware ,compose} from 'redux'; 
+import appReducers from './redux/index';
+import thunk from 'redux-thunk';
+import { createBrowserHistory } from 'history';
+import { connectRouter, routerMiddleware } from 'connected-react-router';
+import { Provider } from "react-redux";
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
-}
+const history = createBrowserHistory();
+const reactRouterMiddleware = routerMiddleware(history); 
+const composeEnhancer = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const middleWares = [ thunk, reactRouterMiddleware ];
+const store = createStore(
+    connectRouter(history)(appReducers), 
+    composeEnhancer(
+        applyMiddleware(...middleWares)
+    ),
+);
 
-export default App;
+const currentAppLocale =
+  AppLocale[getCurrentLanguage(config.defaultLanguage || "Vietnamese").locale];
+const DashApp = () => ( 
+  <LocaleProvider locale={currentAppLocale.antd}>
+    <IntlProvider
+      locale={currentAppLocale.locale}
+      messages={currentAppLocale.messages}
+    >
+          <Provider store={store}> 
+            <PublicRoutes history={history} />
+          </Provider>
+    </IntlProvider>
+  </LocaleProvider>
+);
+
+export default DashApp;
+export { AppLocale };
