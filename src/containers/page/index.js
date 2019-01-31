@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from 'semantic-ui-react';
+import LayoutMain from 'containers/layout/index';
+
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -9,8 +10,7 @@ class Home extends React.Component {
     render() {
         return (
             <div>
-                Hello world
-                <Button>Click Here</Button>
+                <LayoutMain/>
             </div>
         );
     }
