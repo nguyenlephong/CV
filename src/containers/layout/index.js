@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid,  } from 'semantic-ui-react';
 import './layout-main.scss';
 import Sidebar from 'containers/layout/sidebar/index';
+import Content from 'containers/layout/content/index';
 class MainLayout extends React.Component {
     constructor(props) {
         super(props);
@@ -32,7 +33,9 @@ class MainLayout extends React.Component {
                         <Grid.Column 
                             mobile={16} tablet={11} computer={11}
                             >
-                            <div className="cv-content-wrapper">a</div>
+                            <div className="cv-content-wrapper">
+                                <Content/>
+                            </div>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

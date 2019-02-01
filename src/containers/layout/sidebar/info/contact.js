@@ -26,12 +26,12 @@ class Contact extends React.Component {
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={16} tablet={6} computer={6}
+                            mobile={5} tablet={6} computer={6}
                             width={6}>
                             <span className="sb-personal__title"> Mobile: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10}
 
                             width={10}>
                             <span className="sb-personal__description">{contact.mobile}</span>
@@ -39,60 +39,60 @@ class Contact extends React.Component {
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={16} tablet={6} computer={6}
+                            mobile={5} tablet={6} computer={6}
                             width={6}>
                             <span className="sb-personal__title"> Home: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10}
                             width={10}>
                             <span className="sb-personal__description">{contact.home} </span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={16} tablet={6} computer={6}
+                            mobile={5} tablet={6} computer={6}
                             width={6}>
                             <span className="sb-personal__title"> Email: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10}
                             width={10}>
                             <span className="sb-personal__description">{contact.email} </span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={16} tablet={6} computer={6}
+                            mobile={5} tablet={6} computer={6}
                             width={6}>
                             <span className="sb-personal__title"> Email Student: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10}
                             width={10}>
                             <span className="sb-personal__description">{contact.emailStudent} </span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={16} tablet={6} computer={6}
+                            mobile={5} tablet={6} computer={6}
                             width={6}>
                             <span className="sb-personal__title"> Skype: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10}
                             width={10}>
                             <span className="sb-personal__description">{contact.skype} </span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={16} tablet={6} computer={6}
+                            mobile={5} tablet={6} computer={6}
                             width={6}>
                             <span className="sb-personal__title"> Address: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10}
                             width={10}>
                             <span className="sb-personal__description">{contact.address} </span>
                         </Grid.Column>

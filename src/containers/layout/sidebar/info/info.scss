@@ -10,11 +10,11 @@
 }
 
 .cv-sidebar-content__personal {
-    font-weight: bold;
     display: flex;
     flex-direction: row;
-
+    
     .sb-personal__title {
+        font-weight: bold;
         font-weight: 0.25rem;
         line-height: 1.5rem;
     }
