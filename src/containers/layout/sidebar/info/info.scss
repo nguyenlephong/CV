@@ -1,0 +1,26 @@
+.sb-content-personal-title__wrapper {
+    border-bottom:1px solid rgba(0,0,0,0.12);
+    margin-bottom: 10px;
+    .sb-content-personal__title {
+        float: left;
+        text-transform: uppercase;
+        padding: 10px 0;
+    }
+
+}
+
+.cv-sidebar-content__personal {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+
+    .sb-personal__title {
+        font-weight: 0.25rem;
+        line-height: 1.5rem;
+    }
+
+    .sb-personal__description {
+        line-height: 1.5rem;
+    }
+    
+}

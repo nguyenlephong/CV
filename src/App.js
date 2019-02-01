@@ -1,5 +1,4 @@
 import React  from 'react';
-import './App.css';
 import PublicRoutes from 'route/router';
 import { LocaleProvider } from "antd";
 import { IntlProvider } from "react-intl";
