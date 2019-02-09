@@ -7,8 +7,12 @@
         font-weight: bold;
     }
 
-    .pf-sumary__description {
-        line-height: 1.5rem;
-        
+    .pf-sumary__block_description {
+        text-indent: 20px;
+        margin: 10px 0;
+        .pf-sumary__description {
+            line-height: 1.5rem;
+            
+        }
     }
 }
