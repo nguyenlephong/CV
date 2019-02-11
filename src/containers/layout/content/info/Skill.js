@@ -1,5 +1,6 @@
 import React from 'react';
 import ProgrammingLanguageInfo from './image/ProgrammingLanguages.png';
+import Frameworks from './image/Frameworks.png';
 
 import './index.scss';
 class Work extends React.Component {
@@ -14,8 +15,7 @@ class Work extends React.Component {
                 <h2 className="pf-sumary__title">Skill</h2>
                 <div className="pf-skill__hardskill">
                     <img src={ProgrammingLanguageInfo} alt="Programming languages" />
-                    <img src={ProgrammingLanguageInfo} alt="Programming languages" />
-                    <img src={ProgrammingLanguageInfo} alt="Programming languages" />
+                    <img src={Frameworks} alt="Frameworks" />
                     <span className="pf-sumary__description"></span>
                 </div>
             </div>
