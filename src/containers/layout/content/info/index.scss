@@ -16,3 +16,30 @@
         }
     }
 }
+
+.cv-content-profile__skill {
+    .pf-skill__title {
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        font-weight: bold;
+        .pf-skill__hardskill {
+        }
+    }
+}
+
+.content-block_language{
+    display: flex !important;
+
+    .text-description {
+       margin-top: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .content-block_language {
+      flex-direction: column;
+    }
+    .img-description {
+        text-align: center;
+    }
+}
