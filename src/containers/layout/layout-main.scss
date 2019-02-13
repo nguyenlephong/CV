@@ -14,14 +14,14 @@
     }
     .cv-sidebar-wrapper {
         border: 1px;
-        background-color: #ffd079;
+        background-color: #fafafa;
         height: 100%;
 
 
     }
     .cv-content-wrapper {
         border: 1px;
-        background-color: #e4e3e3;
+        background-color: #fefefe;
         height: 100%;
         padding: 20px;
     }
@@ -33,4 +33,12 @@
         // padding: 0 ;
         padding: 0px !important;
     }
+}
+
+.cv-open {
+    display: flex;
+}
+
+.cv-close {
+    display: none;
 }

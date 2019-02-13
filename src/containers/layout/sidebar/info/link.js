@@ -32,6 +32,7 @@ class Link extends React.Component {
                     <Grid.Row columns={1} className="sb-content-personal-title__wrapper">
                         <h3 className="sb-content-personal__title"> Link </h3>
                     </Grid.Row>
+                    
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={5} tablet={6} computer={6}
@@ -81,6 +82,7 @@ class Link extends React.Component {
                             <a href={link.twitter}  className="sb-personal__description">{shortLink.twitter} </a>
                         </Grid.Column>
                     </Grid.Row>
+
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={5} tablet={6} computer={6}
@@ -88,7 +90,7 @@ class Link extends React.Component {
                             <span className="sb-personal__title"> Github: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10}
+                            mobile={11} tablet={10} computer={10} 
                             width={10}>
                             <a href={link.github}  className="sb-personal__description">{shortLink.github} </a>
                         </Grid.Column>
