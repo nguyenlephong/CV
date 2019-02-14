@@ -1,6 +1,8 @@
 import React from 'react';
 import './index.scss'; 
-
+import _ from 'lodash';
+import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
+import ScoreBoard from 'images/project/scoreboard.JPG';
 class ProfileSumary extends React.Component {
 
     render() {
@@ -36,6 +38,48 @@ class ProfileSumary extends React.Component {
                     <span className="pf-sumary__description">
                     Tôi cũng có kênh youtube để chia sẽ kiến thức của mình đến với mọi người.<span> </span>
                     </span>
+                </div>
+
+                <div className="pf-sumary__block_description">
+                    <Modal trigger={<Button  color='brown'>Xem bảng điểm</Button>}>
+                        <Modal.Header>Bảng điểm</Modal.Header>
+                        <Modal.Content image scrolling>
+                            <Modal.Description>
+                                <Header>Bảng điểm đại học</Header>
+                                <p>Đây là bảng điểm lưu lại 3 năm học của tôi, kỳ cuối cùng vẫn chưa có điểm từ phía giảng viên nên đang đợi trong quá trình cập nhật.</p>
+                                <div  style={{textAlign: 'center'}}>
+                                    <Image size='big' src={ScoreBoard} wrapped />
+                                </div>
+
+                            </Modal.Description>
+                        </Modal.Content>
+                        <Modal.Actions>
+                        <Button primary>
+                            Proceed <Icon name='chevron right' />
+                        </Button>
+                        </Modal.Actions>
+                    </Modal>
+                    <Modal size="large" style={{height: '94%'}} trigger={<Button  color='teal'>Xem đề cương luận văn tốt nghiệp</Button>}>
+                        <Modal.Header>Đề cương luận văn</Modal.Header>
+                        <Modal.Content image scrolling>
+
+                            <Modal.Description>
+                                <Header>SmartDrone</Header>
+                                <p>Đây là chi tiết đề cương luận văn tốt nghiệp mà tôi phải thực hiện trong thời gian tới.</p>
+                                <iframe 
+                                    width="100%"
+                                    height="540px"
+                                    src="https://drive.google.com/file/d/1YeFRa9tHYT6KfkNufwiLEN6z1Jcfx3WI/preview">
+                                </iframe>
+
+                            </Modal.Description>
+                        </Modal.Content>
+                        <Modal.Actions>
+                        <Button primary>
+                            Done <Icon name='chevron right' />
+                        </Button>
+                        </Modal.Actions>
+                    </Modal>
                 </div>
 
             </div>
