@@ -23,12 +23,17 @@
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
         font-weight: bold;
         .pf-skill__hardskill {
+            
         }
     }
 }
 
 .content-block_language{
     display: flex !important;
+
+    .img-description {
+        text-align: center;
+    }
 
     .text-description {
        margin-top: 20px !important;
@@ -39,7 +44,17 @@
     .content-block_language {
       flex-direction: column;
     }
+
     .img-description {
         text-align: center;
     }
+}
+
+
+.left {
+    left: 150% !important;
+}
+
+.right {
+    right: 150% !important;
 }

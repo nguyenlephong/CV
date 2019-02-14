@@ -37,7 +37,7 @@ class ProfileContent extends React.Component {
                     <Grid.Column 
                         mobile={16} tablet={16} computer={16}
                         >
-                        <Education/>
+                        {/* <Education/> */}
                         
                     </Grid.Column>
                 </Grid.Row>
