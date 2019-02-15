@@ -4,8 +4,29 @@ import _ from 'lodash';
 import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
 import ScoreBoard from 'images/project/scoreboard.JPG';
 class ProfileSumary extends React.Component {
+    state = { open: false , openDeCuong: false, openYoutube: false}
+
+    closeConfigShow = (closeOnEscape, closeOnDimmerClick) => () => {
+      this.setState({ closeOnEscape, closeOnDimmerClick, open: true })
+    }
+  
+    closeConfigShowDeCuong = (closeOnEscape, closeOnDimmerClick) => () => {
+      this.setState({ closeOnEscape, closeOnDimmerClick, openDeCuong: true })
+    }
+  
+    closeConfigShowYoutubeChannel = (closeOnEscape, closeOnDimmerClick) => () => {
+      this.setState({ closeOnEscape, closeOnDimmerClick, openYoutube: true })
+    }
+  
+    close = () => this.setState({ open: false })
+    
+    closeDeCuong = () => this.setState({ openDeCuong: false })
+    
+    closeYoutubeChannel = () => this.setState({ openYoutube: false })
+
 
     render() {
+        const { open, openDeCuong ,closeOnEscape, closeOnDimmerClick , openYoutube} = this.state
         return (
             <div className="cv-content-profile__sumary">
                 <h2 className="pf-sumary__title">Profile sumary</h2>
@@ -41,7 +62,15 @@ class ProfileSumary extends React.Component {
                 </div>
 
                 <div className="pf-sumary__block_description">
-                    <Modal trigger={<Button  color='brown'>Xem bảng điểm</Button>}>
+                    <Button color='brown' onClick={this.closeConfigShow(true, false)}>Xem bảng điểm</Button>
+                    <Button color='teal' onClick={this.closeConfigShowDeCuong(true, false)}>Xem đề cương luận văn</Button>
+                    <Button color='orange' onClick={this.closeConfigShowYoutubeChannel(true, false)}>Xem kênh youtube của tôi</Button>
+                    <Modal 
+                        open={open}
+                        closeOnEscape={closeOnEscape}
+                        closeOnDimmerClick={closeOnDimmerClick}
+                        onClose={this.close}
+                        >
                         <Modal.Header>Bảng điểm</Modal.Header>
                         <Modal.Content image scrolling>
                             <Modal.Description>
@@ -54,12 +83,16 @@ class ProfileSumary extends React.Component {
                             </Modal.Description>
                         </Modal.Content>
                         <Modal.Actions>
-                        <Button primary>
-                            Proceed <Icon name='chevron right' />
-                        </Button>
+                            <Button onClick={this.close} positive >Done</Button>
                         </Modal.Actions>
                     </Modal>
-                    <Modal size="large" style={{height: '94%'}} trigger={<Button  color='teal'>Xem đề cương luận văn tốt nghiệp</Button>}>
+                    <Modal 
+                        open={openDeCuong}
+                        closeOnEscape={closeOnEscape}
+                        closeOnDimmerClick={closeOnDimmerClick}
+                        onClose={this.closeDeCuong}
+                        size="large" style={{height: '94%'}} 
+                        >
                         <Modal.Header>Đề cương luận văn</Modal.Header>
                         <Modal.Content image scrolling>
 
@@ -75,9 +108,32 @@ class ProfileSumary extends React.Component {
                             </Modal.Description>
                         </Modal.Content>
                         <Modal.Actions>
-                        <Button primary>
-                            Done <Icon name='chevron right' />
-                        </Button>
+                            <Button onClick={this.closeDeCuong}  positive  >Done</Button>
+                        </Modal.Actions>
+                    </Modal>
+                    
+                    <Modal 
+                        open={openYoutube}
+                        closeOnEscape={closeOnEscape}
+                        closeOnDimmerClick={closeOnDimmerClick}
+                        onClose={this.closeYoutubeChannel}
+                        size="large" style={{height: '94%'}} 
+                        >
+                        <Modal.Header>Kênh youtube của tôi</Modal.Header>
+                        <Modal.Content image scrolling>
+
+                            <Modal.Description>
+                                <Header>Chia sẽ kiến thức</Header>
+                                <p>Kênh youtube hơn 700 lượt đăng ký và hơn 200 000 view của tôi.</p>
+                                <iframe 
+                                    width="100%"
+                                    height="540px"
+                                    src="https://www.youtube.com/channel/UCVT2aPzoLT4Qj64VpDBvxuw">
+                                </iframe>
+                            </Modal.Description>
+                        </Modal.Content>
+                        <Modal.Actions>
+                            <Button onClick={this.closeDeCuong}  positive  >Done</Button>
                         </Modal.Actions>
                     </Modal>
                 </div>
