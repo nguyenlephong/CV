@@ -18,14 +18,13 @@ class Sidebar extends React.Component {
                 <Grid padded columns={1} relaxed>
                     <Grid.Row>
                         <Grid.Column 
-                            mobile={16} tablet={16} computer={16}
-                            width={16}>
+                            mobile={16} tablet={16} computer={16} >
                             <div className="cv-header-sidebar-wrapper">
                                 <Image 
                                     centered
                                     avatar
                                     bordered
-                                    fluid
+                                    // fluid
                                     rounded
                                     src={ImgAvartar} size='small' circular />
                             </div>
@@ -35,7 +34,7 @@ class Sidebar extends React.Component {
                 <Grid padded columns={1} relaxed>
                     <Personal/>
                     <Contact/>
-                    <Link/>
+                    {/* <Link/> */}
                 </Grid>
             </div>
         );

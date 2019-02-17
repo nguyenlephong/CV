@@ -7,15 +7,19 @@ import Skill from 'containers/layout/content/info/Skill';
 import Experience from 'containers/layout/content/info/Experience';
 import MyProject from 'containers/layout/content/info/MyProject';
 
+
 class ProfileContent extends React.Component {
 
     render() {
-        const { itemMenuActive } = this.props
-        console.log(itemMenuActive);
+        const { itemMenuActive, screenHeight,  } = this.props;
         return (
             <Grid padded columns={1} relaxed>
-
-                <Grid.Row columns={1} className="cv-content-block">
+                 
+                <Grid.Row columns={1} 
+                    style={{
+                        height: screenHeight-95
+                    }}
+                    className="cv-content-block">
                     <Grid.Column 
                         mobile={16} tablet={16} computer={16}
                         >
@@ -29,35 +33,10 @@ class ProfileContent extends React.Component {
                             (itemMenuActive==='experience')?
                             <Experience/>:
                             <div></div>
-
                         }
                         
                     </Grid.Column>
                 </Grid.Row>
-                {/* <Grid.Row columns={1} className="cv-content-block">
-                    <Grid.Column 
-                        mobile={16} tablet={16} computer={16}
-                        >
-                        <Skill/>
-                        
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={1} className="cv-content-block">
-                    <Grid.Column 
-                        mobile={16} tablet={16} computer={16}
-                        >
-                        <MyProject/>
-                        
-                    </Grid.Column>
-                </Grid.Row>
-                <Grid.Row columns={1} className="cv-content-block">
-                    <Grid.Column 
-                        mobile={16} tablet={16} computer={16}
-                        >
-                        <Experience/>
-                        
-                    </Grid.Column>
-                </Grid.Row> */}
                 
             </Grid>
         );

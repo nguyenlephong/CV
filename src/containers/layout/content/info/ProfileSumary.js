@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss'; 
-import _ from 'lodash';
-import { Button, Header, Icon, Image, Modal } from 'semantic-ui-react';
+// import _ from 'lodash';
+import { Button, Header, Image, Modal } from 'semantic-ui-react';
 import ScoreBoard from 'images/project/scoreboard.JPG';
 class ProfileSumary extends React.Component {
     state = { open: false , openDeCuong: false, openYoutube: false}
@@ -48,7 +48,16 @@ class ProfileSumary extends React.Component {
                     Tôi là người có trách nhiệm cao, thích giúp đỡ người khác, điều đó làm tôi trở nên dễ dàng thân thiện trong môi trường khác. <span> </span>
                     </span>
                     <span className="pf-sumary__description">
-                    Tôi được bạn bè đánh giá cao trong quá trình làm việc nhóm ở trường học qua các đồ án môn học. <span> </span>Tôi rất tự tin trong phần giao tiếp, thuyết trình một vấn đề. <span> </span>
+                    Tôi được bạn bè đánh giá cao trong quá trình làm việc nhóm ở trường học qua các đồ án môn học. <span> </span>Tôi rất tự tin trong phần giao tiếp, thuyết trình một vấn đề nào đó trước mọi người. <span> </span>
+                    </span>
+                </div>
+
+                <div className="pf-sumary__block_description">
+                    <span className="pf-sumary__description">
+                    Tôi cũng giống như mọi người, có những điểm mạnh của mình và tồn tại những điểm tiêu cực. 
+                    </span>
+                    <span className="pf-sumary__description">
+                    <strong>Điểm mạnh của tôi là: </strong> Có trách nhiệm cao trong công việc, chịu được áp lực tốt, 
                     </span>
                 </div>
 
@@ -100,6 +109,7 @@ class ProfileSumary extends React.Component {
                                 <Header>SmartDrone</Header>
                                 <p>Đây là chi tiết đề cương luận văn tốt nghiệp mà tôi phải thực hiện trong thời gian tới.</p>
                                 <iframe 
+                                    title="Smartdrone"
                                     width="100%"
                                     height="540px"
                                     src="https://drive.google.com/file/d/1YeFRa9tHYT6KfkNufwiLEN6z1Jcfx3WI/preview">
@@ -126,6 +136,7 @@ class ProfileSumary extends React.Component {
                                 <Header>Chia sẽ kiến thức</Header>
                                 <p>Kênh youtube hơn 700 lượt đăng ký và hơn 200 000 view của tôi.</p>
                                 <iframe 
+                                    title="Youtube channel"
                                     width="100%"
                                     height="540px"
                                     src="https://www.youtube.com/channel/UCVT2aPzoLT4Qj64VpDBvxuw">

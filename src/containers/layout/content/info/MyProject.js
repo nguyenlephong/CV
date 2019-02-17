@@ -4,8 +4,8 @@ import 'react-vertical-timeline-component/style.min.css';
 import './index.scss';
 import { Image } from 'semantic-ui-react'
 import Avartar from 'images/profile/avartar.jpg';
-import Boom from 'images/project/boom.jpg';
-import AI from 'images/project/AI.jpg';
+// import Boom from 'images/project/boom.jpg';
+// import AI from 'images/project/AI.jpg';
 import CoTuong from 'images/project/cotuong.png';
 import PaypalShop from 'images/project/paypal.png';
 import SmartphoneShop from 'images/project/shopping.jpg';
@@ -113,7 +113,7 @@ class Education extends React.Component {
                         // icon={<Avatar size="small" icon="user" />}
                     >
                         <h3 className="vertical-timeline-element-title">Bắt đầu học đại học tại trường Đại Học Nông Lâm</h3>
-                        <h4 className="vertical-timeline-element-subtitle"></h4>
+                        <h4 className="vertical-timeline-element-subtitle"> </h4>
                         <span class="vertical-timeline-element-date right">2015</span>
                     </VerticalTimelineElement>
                 </VerticalTimeline>

@@ -35,63 +35,52 @@ class Link extends React.Component {
                     
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6}
-                            width={6}>
+                            mobile={5} tablet={6} computer={6} >
                             <span className="sb-personal__title"> Facebook: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10}
-
-                            width={10}>
+                            mobile={11} tablet={10} computer={10} >
                             <a href={link.facebook}  className="sb-personal__description">{shortLink.facebook}</a>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6}
-                            width={6}>
+                            mobile={5} tablet={6} computer={6} >
                             <span className="sb-personal__title"> Blog: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10}
-                            width={10}>
+                            mobile={11} tablet={10} computer={10} >
                             <a href={link.blog}  className="sb-personal__description">{shortLink.blog} </a>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6}
-                            width={6}>
+                            mobile={5} tablet={6} computer={6} >
                             <span className="sb-personal__title"> Youtube: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10}
-                            width={10}>
+                            mobile={11} tablet={10} computer={10} >
                             <a href={link.youtube}  className="sb-personal__description">{shortLink.youtube} </a>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6}
-                            width={6}>
+                            mobile={5} tablet={6} computer={6} >
                             <span className="sb-personal__title"> Twitter: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10}
-                            width={10}>
+                            mobile={11} tablet={10} computer={10} >
                             <a href={link.twitter}  className="sb-personal__description">{shortLink.twitter} </a>
                         </Grid.Column>
                     </Grid.Row>
 
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6}
-                            width={6}>
+                            mobile={5} tablet={6} computer={6} >
                             <span className="sb-personal__title"> Github: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10} 
-                            width={10}>
+                            mobile={11} tablet={10} computer={10}  >
                             <a href={link.github}  className="sb-personal__description">{shortLink.github} </a>
                         </Grid.Column>
                     </Grid.Row>

@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import { Affix, Button } from 'antd';
+import { Affix,  } from 'antd';
 import { 
     Grid, 
     Menu,
@@ -34,7 +34,10 @@ class MainLayout extends React.Component {
     state = {
         isOpen: true,
         itemMenuActive: 'profile',
-        vertical: false
+        vertical: false,
+        screenWidth: window.innerWidth,
+        screenHeight: window.innerHeight,
+
     }
 
     handleItemClick = (e, { name }) => {
@@ -42,6 +45,7 @@ class MainLayout extends React.Component {
     }
 
     updateDimensions() {
+        this.setState({screenWidth: window.innerWidth, screenHeight: window.innerHeight});
         if(window.innerWidth < 600){
           this.setState({ vertical: true,  });
         }else{
@@ -59,15 +63,14 @@ class MainLayout extends React.Component {
     }
 
     render() {
-        const {  isOpen } = this.state
+        const {  isOpen, screenHeight, screenWidth } = this.state;
         return (
             <div className="cv-main-layout">
                 
                 <Grid padded columns={1} relaxed>
                     <Grid.Row>
                         <Grid.Column 
-                            mobile={16} tablet={16} computer={16}
-                            width={16}>
+                            mobile={16} tablet={16} computer={16} >
                             <div className="cv-header-wrapper">
                             </div>
                         </Grid.Column>
@@ -76,7 +79,7 @@ class MainLayout extends React.Component {
                     
                     <Grid.Row columns={2}>
                         <Grid.Column 
-                            mobile={16} tablet={(isOpen)?3:0} computer={(isOpen)?3:0}
+                            mobile={16} tablet={(isOpen)?4:0} computer={(isOpen)?4:0}
                             >
                             <div  
                                 className={
@@ -91,7 +94,7 @@ class MainLayout extends React.Component {
                             </div>  
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={16} tablet={(isOpen)?13:16} computer={(isOpen)?13:16}
+                            mobile={16} tablet={(isOpen)?12:16} computer={(isOpen)?12:16}
                             >
                             <div className="cv-content-wrapper">
                             {(this.state.vertical)?
@@ -115,6 +118,8 @@ class MainLayout extends React.Component {
                                 </Affix>
                             }
                                 <Content 
+                                    screenHeight={screenHeight}
+                                    screenWidth={screenWidth}
                                     itemMenuActive={this.state.itemMenuActive}/>
                             </div>
                         </Grid.Column>
