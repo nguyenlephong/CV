@@ -1,10 +1,18 @@
 import React from 'react';
 import './index.scss'; 
 // import _ from 'lodash';
-import { Button, Header, Image, Modal } from 'semantic-ui-react';
+import { Button, Header, Image, Modal, Icon } from 'semantic-ui-react';
 import ScoreBoard from 'images/project/scoreboard.JPG';
 class ProfileSumary extends React.Component {
-    state = { open: false , openDeCuong: false, openYoutube: false}
+    state = { 
+        open: false , 
+        openDeCuong: false, 
+        openYoutube: false,
+        colorIcon: 'green',
+        iconName: 'hand point right outline',
+        colorIconCheck: 'green',
+        iconNameCheck: 'check'
+    }
 
     closeConfigShow = (closeOnEscape, closeOnDimmerClick) => () => {
       this.setState({ closeOnEscape, closeOnDimmerClick, open: true })
@@ -26,47 +34,88 @@ class ProfileSumary extends React.Component {
 
 
     render() {
-        const { open, openDeCuong ,closeOnEscape, closeOnDimmerClick , openYoutube} = this.state
+        const { open, openDeCuong ,
+            closeOnEscape, closeOnDimmerClick , 
+            openYoutube, colorIcon, iconName, 
+            iconNameCheck, colorIconCheck} = this.state;
         return (
             <div className="cv-content-profile__sumary">
                 <h2 className="pf-sumary__title">Profile sumary</h2>
                 
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__description">
-                    Tên của tôi là Nguyễn Lê Phong, tôi hiện đang là sinh viên năm 4 của khoa công nghệ thông tin, trường đại học Nông Lâm Thành Phố Hồ Chí Minh.<span> </span> 
-                    </span>
-                    <span className="pf-sumary__description">
-                    Hiện tại tôi đã hoàn thành hết các môn học tín chỉ, kỳ này tôi đang trong giai đoạn làm luận văn tốt nghiệp.<span> </span>
-                    </span>
-                    <span className="pf-sumary__description">
-                    Tôi là một lập trình viên Fullstack, có kiến thức tốt về ngôn ngữ <strong>Java</strong>, <strong>Framework ReactJS</strong>.
+                    Tôi tên là Nguyễn Lê Phong, hiện tại tôi đang là sinh viên năm 4 trường đại học Nông Lâm TP HCM. 
+                    Tôi đã tích lũy đủ tín chỉ và đang trong quá trình làm luận văn tốt nghiệp để hoàn thành chương trình học đại học. 
+                    Tôi là một lập trình viên <strong>Full Stack</strong>, có kiến thức tốt về ngôn ngữ <strong>Java</strong> và <strong>Framework ReactJS</strong>. 
                     </span>
                 </div>
 
                 <div className="pf-sumary__block_description">
-                    <span className="pf-sumary__description">
-                    Tôi là người có trách nhiệm cao, thích giúp đỡ người khác, điều đó làm tôi trở nên dễ dàng thân thiện trong môi trường khác. <span> </span>
+                    <span className="pf-sumary__title-description">
+                        <Icon color={colorIcon} name={iconName} />  <strong>Về điểm mạnh:</strong>
                     </span>
-                    <span className="pf-sumary__description">
-                    Tôi được bạn bè đánh giá cao trong quá trình làm việc nhóm ở trường học qua các đồ án môn học. <span> </span>Tôi rất tự tin trong phần giao tiếp, thuyết trình một vấn đề nào đó trước mọi người. <span> </span>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Tôi là người có trách nhiệm cao trong công việc.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Là người dễ hòa đồng, sẵn sàng giúp đỡ người khác khi có thể.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Tôi có khả năng quản lý thời gian cá nhân tốt.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Dễ dàng thích nghi với môi trường làm việc nhóm.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Có khả năng phân tích vấn đề, giải quyết vấn đề.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Chịu đựng áp lực tốt, tính kiên nhẫn cao.
+                    </div>
+                </div>
+                <div className="pf-sumary__block_description">
+                    <span className="pf-sumary__title-description">
+                        <Icon color={colorIcon} name={iconName} />  <strong>Về điểm yếu:</strong>
                     </span>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Tôi chưa có nhiều kinh nghiệm trong lĩnh vực hiện tại.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Trình độ ngoại ngữ (Tiếng Anh) chưa tốt.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Mắt thẩm mỹ không cao
+                    </div>
+                </div>
+                <div className="pf-sumary__block_description">
+                    <span className="pf-sumary__title-description">
+                        <Icon color={colorIcon} name={iconName} />  <strong>Về sở thích:</strong>
+                    </span>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Tôi là một người đam mê công nghệ, ứng dụng công nghệ vào thực tế.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Thích xem phim (phim có thể mang lại các bài học nâng cao kỷ năng sống), ca hát vào cuối tuần, ngày nghỉ cùng với bạn bè, người thân.
+                    </div>
+                    <div className="pf-sumary__strong">
+                        <Icon color={colorIconCheck} name={iconNameCheck} /> 
+                        Thích đọc tin tức công nghệ mới, ứng dụng mới để chém gió với bạn bè khi rảnh rỗi.
+                    </div>
                 </div>
 
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__description">
-                    Tôi cũng giống như mọi người, có những điểm mạnh của mình và tồn tại những điểm tiêu cực. 
-                    </span>
-                    <span className="pf-sumary__description">
-                    <strong>Điểm mạnh của tôi là: </strong> Có trách nhiệm cao trong công việc, chịu được áp lực tốt, 
-                    </span>
-                </div>
-
-                <div className="pf-sumary__block_description">
-                    <span className="pf-sumary__description">
-                    Công nghệ mới và ngôn ngữ mới là những chủ đề mà tôi đam mê, tìm hiểu và học hỏi. Ngay từ thời còn đi học tôi rất muốn áp dụng công nghệ mới để làm ra một vật thể có ích cho xã hội, và đó là đề tài làm luận văn tốt nghiệp của tôi.<span> </span>
-                    </span>
-                    <span className="pf-sumary__description">
-                    Tôi cũng có kênh youtube để chia sẽ kiến thức của mình đến với mọi người.<span> </span>
                     </span>
                 </div>
 

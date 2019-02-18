@@ -58,12 +58,12 @@ export default class MenuExampleIcons extends Component {
 
 
         <Menu.Item
-          name='experience'
-          active={activeItem === 'experience'}
+          name='link'
+          active={activeItem === 'link'}
           onClick={this.handleItemClick}
         >
           {/* <Icon name='video play' /> */}
-          Experience
+          Link
         </Menu.Item>
       </Menu>
     )

@@ -4,7 +4,7 @@ import './content.scss';
 import ProfileSumary from 'containers/layout/content/info/ProfileSumary';
 // import Education from 'containers/layout/content/info/Education';
 import Skill from 'containers/layout/content/info/Skill';
-import Experience from 'containers/layout/content/info/Experience';
+import Link from 'containers/layout/content/info/link';
 import MyProject from 'containers/layout/content/info/MyProject';
 
 
@@ -30,8 +30,8 @@ class ProfileContent extends React.Component {
                             <Skill/>:
                             (itemMenuActive==='project')?
                             <MyProject/>:
-                            (itemMenuActive==='experience')?
-                            <Experience/>:
+                            (itemMenuActive==='link')?
+                            <Link/>:
                             <div></div>
                         }
                         

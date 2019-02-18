@@ -26,12 +26,16 @@ const store = createStore(
 
 const currentAppLocale =
   AppLocale[getCurrentLanguage(config.defaultLanguage || "Vietnamese").locale];
+  
 const DashApp = () => ( 
+  
   <LocaleProvider locale={currentAppLocale.antd}>
     <IntlProvider
       locale={currentAppLocale.locale}
       messages={currentAppLocale.messages}
     >
+      
+    {console.log(currentAppLocale)}
           <Provider store={store}> 
             <PublicRoutes history={history} />
           </Provider>

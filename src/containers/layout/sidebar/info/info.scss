@@ -9,6 +9,7 @@
         text-align: center;
         margin: auto;
         font-weight: bold;
+        color: greenyellow;
     }
 
 }
@@ -18,17 +19,23 @@
     flex-direction: column !important;
     // flex-direction: row;
     margin: 4px 0;
+    color: #b8b94b ;
+
     
     .sb-personal__title {
         font-weight: bold;
         font-weight: 0.25rem;
         line-height: 1.5rem;
         font-size: 1.20rem;
+        // color: #5FCF23;
+
     }
 
     .sb-personal__description {
         line-height: 1.5rem;
         font-size: 1.20rem;
+        // color: #5FCF23;
+
     }
     
 }

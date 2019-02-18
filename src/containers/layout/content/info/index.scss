@@ -1,5 +1,6 @@
 .cv-content-profile__sumary {
-    
+    font-size: 1.25rem;
+    font-weight: 450;
 
     .pf-sumary__title {
         text-transform: uppercase;
@@ -10,9 +11,20 @@
     .pf-sumary__block_description {
         text-indent: 20px;
         margin: 10px 0;
+
+        .pf-sumary__strong {
+            margin-left: 40px;
+            text-indent: 0px;
+        }
+
         .pf-sumary__description {
             line-height: 1.5rem;
             
+        }
+
+        .pf-sumary__title-description {
+            text-indent: 0px;
+            border-bottom: 3px double;
         }
     }
 }
@@ -27,6 +39,36 @@
         }
     }
 }
+
+.cv-content-project {
+
+    .pf-sumary__title {
+        text-transform: uppercase;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+        font-weight: bold;
+    }
+    
+    .project__text-description {
+        font-size: 1.25rem;
+        font-weight: 450;
+    }
+
+    .vertical-timeline-element-title {
+        font-size: 1.75rem;
+        font-weight: bold;
+    }
+    
+    .vertical-timeline-element-subtitle {
+        font-size: 1.55rem;
+        font-weight: 500;
+    }
+    
+    .vertical-timeline-element-date {
+        font-size: 1.5rem !important;
+        font-weight: bold;
+    }
+}
+
 
 .content-block_language{
     display: flex !important;
@@ -67,4 +109,19 @@
 
 .right {
     right: 150% !important;
+}
+
+.cv-content_link {
+    font-size: 1.25rem;
+    font-weight: 450;
+    .link__title-description {
+        margin-left: 20px;
+
+    }
+
+    .link__strong {
+        color: black;
+        text-decoration: gray;
+        margin-left: 20px;
+    }
 }

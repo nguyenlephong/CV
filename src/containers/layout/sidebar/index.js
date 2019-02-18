@@ -4,7 +4,6 @@ import './sidebar-main.scss';
 import ImgAvartar from 'images/profile/avartar.jpg';
 import Personal from './info/personal';
 import Contact from './info/contact';
-import Link from './info/link';
 class Sidebar extends React.Component {
     constructor(props) {
         super(props);
@@ -34,7 +33,6 @@ class Sidebar extends React.Component {
                 <Grid padded columns={1} relaxed>
                     <Personal/>
                     <Contact/>
-                    {/* <Link/> */}
                 </Grid>
             </div>
         );
