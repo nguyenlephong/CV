@@ -3,11 +3,12 @@ import './index.scss';
 // import _ from 'lodash';
 import { Button, Header, Image, Modal, Icon } from 'semantic-ui-react';
 import ScoreBoard from 'images/project/scoreboard.JPG';
+import IntlMessages from 'components/intl-message/intlMessages';
+
 class ProfileSumary extends React.Component {
     state = { 
         open: false , 
         openDeCuong: false, 
-        openYoutube: false,
         colorIcon: 'green',
         iconName: 'hand point right outline',
         colorIconCheck: 'green',
@@ -22,107 +23,95 @@ class ProfileSumary extends React.Component {
       this.setState({ closeOnEscape, closeOnDimmerClick, openDeCuong: true })
     }
   
-    closeConfigShowYoutubeChannel = (closeOnEscape, closeOnDimmerClick) => () => {
-      this.setState({ closeOnEscape, closeOnDimmerClick, openYoutube: true })
-    }
-  
     close = () => this.setState({ open: false })
     
     closeDeCuong = () => this.setState({ openDeCuong: false })
     
-    closeYoutubeChannel = () => this.setState({ openYoutube: false })
-
-
     render() {
         const { open, openDeCuong ,
             closeOnEscape, closeOnDimmerClick , 
-            openYoutube, colorIcon, iconName, 
+            colorIcon, iconName, 
             iconNameCheck, colorIconCheck} = this.state;
         return (
             <div className="cv-content-profile__sumary">
-                <h2 className="pf-sumary__title">Profile sumary</h2>
+                <h2 className="pf-sumary__title"><IntlMessages id={'topbar.profile.title'} /></h2>
                 
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__description">
-                    Tôi tên là Nguyễn Lê Phong, hiện tại tôi đang là sinh viên năm 4 trường đại học Nông Lâm TP HCM. 
-                    Tôi đã tích lũy đủ tín chỉ và đang trong quá trình làm luận văn tốt nghiệp để hoàn thành chương trình học đại học. 
-                    Tôi là một lập trình viên <strong>Full Stack</strong>, có kiến thức tốt về ngôn ngữ <strong>Java</strong> và <strong>Framework ReactJS</strong>. 
+                        <IntlMessages id={'topbar.profile.description.summary'} />
                     </span>
                 </div>
 
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__title-description">
-                        <Icon color={colorIcon} name={iconName} />  <strong>Về điểm mạnh:</strong>
+                        <Icon color={colorIcon} name={iconName} /><strong><IntlMessages id={'topbar.profile.description.strengths'} />:</strong>
                     </span>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Tôi là người có trách nhiệm cao trong công việc.
+                        <IntlMessages id={'topbar.profile.description.strengths.description1'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Là người dễ hòa đồng, sẵn sàng giúp đỡ người khác khi có thể.
+                        <IntlMessages id={'topbar.profile.description.strengths.description2'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Tôi có khả năng quản lý thời gian cá nhân tốt.
+                        <IntlMessages id={'topbar.profile.description.strengths.description3'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Dễ dàng thích nghi với môi trường làm việc nhóm.
+                        <IntlMessages id={'topbar.profile.description.strengths.description4'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Có khả năng phân tích vấn đề, giải quyết vấn đề.
+                        <IntlMessages id={'topbar.profile.description.strengths.description5'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Chịu đựng áp lực tốt, tính kiên nhẫn cao.
+                        <IntlMessages id={'topbar.profile.description.strengths.description6'} />.
                     </div>
                 </div>
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__title-description">
-                        <Icon color={colorIcon} name={iconName} />  <strong>Về điểm yếu:</strong>
+                        <Icon color={colorIcon} name={iconName} />  <strong><IntlMessages id={'topbar.profile.description.weaknesses'} />:</strong>
                     </span>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Tôi chưa có nhiều kinh nghiệm trong lĩnh vực hiện tại.
+                        <IntlMessages id={'topbar.profile.description.weaknesses.description1'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Trình độ ngoại ngữ (Tiếng Anh) chưa tốt.
+                        <IntlMessages id={'topbar.profile.description.weaknesses.description2'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Mắt thẩm mỹ không cao
+                        <IntlMessages id={'topbar.profile.description.weaknesses.description3'} />.
                     </div>
                 </div>
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__title-description">
-                        <Icon color={colorIcon} name={iconName} />  <strong>Về sở thích:</strong>
+                        <Icon color={colorIcon} name={iconName} />  <strong><IntlMessages id={'topbar.profile.description.hobby'} />:</strong>
                     </span>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Tôi là một người đam mê công nghệ, ứng dụng công nghệ vào thực tế.
+                        <IntlMessages id={'topbar.profile.description.hobby.description1'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Thích xem phim (phim có thể mang lại các bài học nâng cao kỷ năng sống), ca hát vào cuối tuần, ngày nghỉ cùng với bạn bè, người thân.
+                        <IntlMessages id={'topbar.profile.description.hobby.description2'} />.
                     </div>
                     <div className="pf-sumary__strong">
                         <Icon color={colorIconCheck} name={iconNameCheck} /> 
-                        Thích đọc tin tức công nghệ mới, ứng dụng mới để chém gió với bạn bè khi rảnh rỗi.
+                        <IntlMessages id={'topbar.profile.description.hobby.description3'} />.
                     </div>
                 </div>
 
                 <div className="pf-sumary__block_description">
-                    <span className="pf-sumary__description">
-                    </span>
-                </div>
-
-                <div className="pf-sumary__block_description">
-                    <Button color='brown' onClick={this.closeConfigShow(true, false)}>Xem bảng điểm</Button>
-                    <Button color='teal' onClick={this.closeConfigShowDeCuong(true, false)}>Xem đề cương luận văn</Button>
-                    <Button color='orange' onClick={this.closeConfigShowYoutubeChannel(true, false)}>Xem kênh youtube của tôi</Button>
+                    <div className="btn-group__profile">
+                        <Button color='brown' onClick={this.closeConfigShow(true, false)}>Xem bảng điểm</Button>
+                        <Button color='teal' onClick={this.closeConfigShowDeCuong(true, false)}>Xem đề cương luận văn</Button>
+                        <Button color='orange'><a style={{color:'white'}} href="http://bit.ly/2D0vpfn">Xem kênh youtube của tôi</a></Button>
+                    </div>
                     <Modal 
                         open={open}
                         closeOnEscape={closeOnEscape}
@@ -171,31 +160,6 @@ class ProfileSumary extends React.Component {
                         </Modal.Actions>
                     </Modal>
                     
-                    <Modal 
-                        open={openYoutube}
-                        closeOnEscape={closeOnEscape}
-                        closeOnDimmerClick={closeOnDimmerClick}
-                        onClose={this.closeYoutubeChannel}
-                        size="large" style={{height: '94%'}} 
-                        >
-                        <Modal.Header>Kênh youtube của tôi</Modal.Header>
-                        <Modal.Content image scrolling>
-
-                            <Modal.Description>
-                                <Header>Chia sẽ kiến thức</Header>
-                                <p>Kênh youtube hơn 700 lượt đăng ký và hơn 200 000 view của tôi.</p>
-                                <iframe 
-                                    title="Youtube channel"
-                                    width="100%"
-                                    height="540px"
-                                    src="https://www.youtube.com/channel/UCVT2aPzoLT4Qj64VpDBvxuw">
-                                </iframe>
-                            </Modal.Description>
-                        </Modal.Content>
-                        <Modal.Actions>
-                            <Button onClick={this.closeDeCuong}  positive  >Done</Button>
-                        </Modal.Actions>
-                    </Modal>
                 </div>
 
             </div>

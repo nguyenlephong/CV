@@ -3,6 +3,7 @@ import ProgrammingLanguageInfo from './image/ProgrammingLanguages.png';
 import Frameworks from './image/FrameWorks.png';
 import Databases from './image/Database.png';
 import MySkill from './image/skill.png';
+import IntlMessages from 'components/intl-message/intlMessages';
 
 import { Grid, Icon } from 'semantic-ui-react';
 import './index.scss';
@@ -19,7 +20,7 @@ class Work extends React.Component {
         const {colorIcon, iconName} = this.state;
         return (
             <div className="cv-content-profile__skill">
-                <h2 className="pf-skill__title">Skill</h2>
+                <h2 className="pf-skill__title"><IntlMessages id={'topbar.menu_skill.title'} /></h2>
                 <div className="pf-skill__hardskill">
                     
                     <Grid padded columns={1} relaxed>
@@ -32,11 +33,22 @@ class Work extends React.Component {
                             <Grid.Column className="text-description"
                                 mobile={16} tablet={11} computer={11}
                                 >
-                                       <div><Icon color={colorIcon} name={iconName} /> Đã trải qua 7 học kỳ học ngôn ngữ lập trình <strong>JAVA</strong> tại trường, tự tin sử dụng tốt ngôn ngữ này.</div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Biết sử dụng ngôn ngữ lập trình <strong>HTML</strong>, hiểu được cấu trúc ngữ nghĩa của các thẻ HTML.</div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Biết sử dụng ngôn ngữ lập trình <strong>HTML</strong>, hiểu được cấu trúc ngữ nghĩa của các thẻ HTML.</div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Sử dụng tốt <strong>CSS</strong> trong quá trình làm đẹp trang web, thành thạo các <strong>CSS preprocessor</strong> như: SCSS, SASS, LESS.</div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Có hiểu biết về ngôn ngữ <strong>Javascript</strong>, và đây là ngôn ngữ mà tôi rất thích.</div>
+                                    <div>
+                                        <Icon color={colorIcon} name={iconName} /> 
+                                        <IntlMessages id={'topbar.skill.proframming_language.description1'} />.
+                                    </div>
+                                    <div>
+                                        <Icon color={colorIcon} name={iconName} /> 
+                                        <IntlMessages id={'topbar.skill.proframming_language.description2'} />.
+                                    </div>
+                                    <div>
+                                        <Icon color={colorIcon} name={iconName} /> 
+                                        <IntlMessages id={'topbar.skill.proframming_language.description3'} />.
+                                    </div>
+                                    <div>
+                                        <Icon color={colorIcon} name={iconName} /> 
+                                        <IntlMessages id={'topbar.skill.proframming_language.description4'} />.
+                                    </div>
                             </Grid.Column>
                         </Grid.Row>
 
@@ -49,9 +61,18 @@ class Work extends React.Component {
                             <Grid.Column className="text-description"
                                 mobile={16} tablet={11} computer={11}
                                 >
-                                       <div><Icon color={colorIcon} name={iconName} /> Sử dụng <strong>ReactJS</strong> trong 4 tháng liên tiếp với dự án thật. </div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Sử dụng thành thạo các thư viện hỗ trợ UI/UX cho React như <strong>Ant Design</strong>, <strong> React semantic</strong>, <strong>React Bootstrap</strong>.</div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Thường xuyên sử dụng các thư viện bên thứ ba như <strong>Axios</strong>, <strong>Fetch API</strong>, <strong>React router</strong>, <strong>Redux</strong>, <strong>Redux thunk</strong>...</div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.framworks.description1'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.framworks.description2'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.framworks.description3'} />.
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
 
@@ -64,8 +85,14 @@ class Work extends React.Component {
                             <Grid.Column className="text-description"
                                 mobile={16} tablet={11} computer={11}
                                 >
-                                       <div><Icon color={colorIcon} name={iconName} /> Sử dụng thành thạo hệ quản trị cơ sở dữ liệu <strong>Microsoft SQL Server</strong>.</div>
-                                       <div><Icon color={colorIcon} name={iconName} /> Am hiểu mức độ cơ bản về MySql thông qua các đồ án môn học, và các website wordpress.</div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.database.description1'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.database.description2'} />.
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
                         <Grid.Row columns={2} className="content-block_language">
@@ -77,12 +104,26 @@ class Work extends React.Component {
                             <Grid.Column className="text-description"
                                 mobile={16} tablet={11} computer={11}
                                 >
-                                <div><Icon color={colorIcon} name={iconName} /> Sử dụng thành thạo các IDE như: <strong>VSCode, Eclipse, Atom, ...</strong></div>
-                                <div><Icon color={colorIcon} name={iconName} /> Am hiểu về quy trình <strong>Agile, Scrumb</strong>.</div>
-                                <div><Icon color={colorIcon} name={iconName} /> Sử dụng tốt công cụ <strong>Github</strong> để quản lý sourcecode, version.</div>
-                                <div><Icon color={colorIcon} name={iconName} /> Đã từng quản lý công việc, giao task, nhận task thông qua tool Visual Studio Team Services.</div>
-                                <div><Icon color={colorIcon} name={iconName} /> Ngoài ra, tôi còn có kỷ năng giao tiếp, thuyết trình tương đối tốt.</div>
-                                
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.other.description1'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.other.description2'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.other.description3'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.other.description4'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.other.description5'} />.
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
 

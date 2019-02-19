@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import {  Menu } from 'semantic-ui-react';
+import {  Menu, Dropdown, Flag } from 'semantic-ui-react';
 import './index.css';
-export default class MenuExampleIcons extends Component {
+import IntlMessages from 'components/intl-message/intlMessages';
+
+import { connect } from 'react-redux';
+import actions from 'redux/languageSwitcher/actions';
+
+const { changeLanguage } = actions;
+
+class MenuExampleIcons extends Component {
   state = { 
     activeItem: 'anhmap',
   }
@@ -14,18 +21,18 @@ export default class MenuExampleIcons extends Component {
 
   render() {
     const { activeItem } = this.state
-    const {hideSidebar, showSidebar, isOpenSidebar, vertical} = this.props;
+    const {hideSidebar, showSidebar, isOpenSidebar, vertical, changeLanguage} = this.props;
     return (
       <Menu styles={{width: '100% !importance'}} vertical={vertical} icon color="brown">
 
         {(!isOpenSidebar)?
           <Menu.Item name='showSidebar' active={activeItem === 'showSidebar'} onClick={hideSidebar}>
-            Xem thông tin
+            <IntlMessages id={'topbar.menu_showInfo'} />
           </Menu.Item>
         : 
-          <Menu.Item name='hideSidebar' active={activeItem === 'hideSidebar'} onClick={showSidebar}>
-            Ẩn thông tin
-          </Menu.Item>
+        <Menu.Item name='hideSidebar' active={activeItem === 'hideSidebar'} onClick={showSidebar}>
+          <IntlMessages id={'topbar.menu_hideInfo'} />
+        </Menu.Item>
         } 
 
 
@@ -35,7 +42,8 @@ export default class MenuExampleIcons extends Component {
           onClick={this.handleItemClick}
         >
           {/* <Icon name='video camera' /> */}
-          Profile
+          <IntlMessages id={'topbar.menu_profile'} />
+
         </Menu.Item>
 
         <Menu.Item
@@ -44,7 +52,8 @@ export default class MenuExampleIcons extends Component {
           onClick={this.handleItemClick}
         >
           {/* <Icon name='video play' /> */}
-          Skill
+          <IntlMessages id={'topbar.menu_skill'} />
+
         </Menu.Item>
 
         <Menu.Item
@@ -53,7 +62,8 @@ export default class MenuExampleIcons extends Component {
           onClick={this.handleItemClick}
         >
           {/* <Icon name='video play' /> */}
-          Project
+          <IntlMessages id={'topbar.menu_project'} />
+
         </Menu.Item>
 
 
@@ -62,10 +72,32 @@ export default class MenuExampleIcons extends Component {
           active={activeItem === 'link'}
           onClick={this.handleItemClick}
         >
-          {/* <Icon name='video play' /> */}
-          Link
+          <IntlMessages id={'topbar.menu_link'} />
         </Menu.Item>
+
+        <Menu.Menu position='right'>
+          <Dropdown item text={<IntlMessages id={'topbar.menu_language'} />}>
+            <Dropdown.Menu>
+              <Dropdown.Item 
+                icon={<Flag name='vn' />} value="Vietnamese" 
+                text={<IntlMessages id={'topbar.language.vietnam'} />} 
+                onClick={(event, data)=>changeLanguage(data.value)} />
+              <Dropdown.Item 
+                icon={<Flag name='us'/>} value="english" 
+                text={<IntlMessages id={'topbar.language.english'} />} 
+                onClick={(event, data)=>changeLanguage(data.value)} />
+            </Dropdown.Menu>
+          </Dropdown>
+        </Menu.Menu>
       </Menu>
     )
   }
 }
+
+export default connect(
+  state => ({
+    ...state.LanguageSwitcher,
+  }),
+  { changeLanguage}
+)(MenuExampleIcons);
+

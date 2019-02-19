@@ -4,11 +4,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import './index.scss';
 import { Image } from 'semantic-ui-react'
 import Avartar from 'images/profile/avartar.jpg';
-// import Boom from 'images/project/boom.jpg';
-// import AI from 'images/project/AI.jpg';
 import CoTuong from 'images/project/cotuong.png';
 import PaypalShop from 'images/project/paypal.png';
 import SmartphoneShop from 'images/project/shopping.jpg';
+import IntlMessages from 'components/intl-message/intlMessages';
+
 class Education extends React.Component {
     constructor(props) {
         super(props);
@@ -18,7 +18,7 @@ class Education extends React.Component {
     render() {
         return (
             <div className="cv-content-project">
-                <h2 className="pf-sumary__title">My Project</h2>
+                <h2 className="pf-sumary__title"><IntlMessages id={'topbar.menu_project.title'} /></h2>
                 <VerticalTimeline
                     // layout="one-column"
                 >
@@ -27,14 +27,18 @@ class Education extends React.Component {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red', }}
                         icon={<Image src={PaypalShop} size='medium' circular />}
                     >
-                        <h3 className="vertical-timeline-element-title">Ứng dụng web cho thuê xe</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Thương Mại Điện Tử</h4>
+                        <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_rentalcar.title'} /></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_rentalcar.subtitle'} /></h4>
+                        <p className="project__text-description"><IntlMessages id={'topbar.project_rentalcar.description'} /></p>
                         <p className="project__text-description">
-                        Đồ án môn học này với mục đích là viết một ứng dụng có sử dụng các dịch vụ thanh toán online, đồng thời xây dựng một mô hình kinh doanh nhầm mang lại lợi nhuận. Đây là đồ án phục vụ cho môn học <strong>Thương mại điện tử</strong>. Dưới đây là link demo và sourcecode
+                            <IntlMessages id={'topbar.project.linkdemo'} />: 
+                            <a  href="https://rental-car.azurewebsites.net/"> <IntlMessages id={'topbar.project.linkdemo.description'} /></a>
                         </p>
-                        <p className="project__text-description">Link demo: <a  href="https://rental-car.azurewebsites.net/"> Click vô đây nè!</a></p>
-                        <p className="project__text-description">Link code: <a href="https://github.com/lephong2017/ThuongMaiDienTu-Backend">Click vô đây nè!</a></p>
-                        <span className="vertical-timeline-element-date left">21/01/2019 - Project and Present</span>
+                        <p className="project__text-description">
+                            <IntlMessages id={'topbar.project.linkcode'} />: 
+                            <a href="https://github.com/lephong2017/ThuongMaiDienTu-Backend"> <IntlMessages id={'topbar.project.linkdemo.description'} /></a>
+                        </p>
+                        <span className="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_rentalcar.date'} /></span>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -42,11 +46,9 @@ class Education extends React.Component {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red', }}
                         icon={<Image src={Avartar} size='medium' circular />}
                     >
-                        <h3 className="vertical-timeline-element-title">Ứng dụng điểm danh sinh viên bằng nhận diện khuôn mặt</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Lập Trình Ứng Dụng Trên Thiết Bị Di Động</h4>
-                        <p className="project__text-description">
-                        Ứng dụng này được viết bằng ngôn ngữ ReactNative chạy thử nghiệm trên android để phục vụ cho đồ án môn học <strong>Lập trình trên thiết bị di động</strong>. Nó là một trong những đồ án mà tôi rất thích. Đây là video mà tôi đã quay lại những chức năng của ứng dụng.
-                        </p>
+                        <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_rollcall.title'} /></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_rollcall.subtitle'} /></h4>
+                        <p className="project__text-description"><IntlMessages id={'topbar.project_rollcall.description'} /> </p>
                         <iframe 
                             title="Ứng dụng điểm danh sinh viên bằng nhận diện khuôn mặt"
                             width="260" 
@@ -55,7 +57,7 @@ class Education extends React.Component {
                             frameborder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
-                        <span class="vertical-timeline-element-date right">11/01/2019 - Project and Present</span>
+                        <span class="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_rollcall.date'} /></span>
                     </VerticalTimelineElement>
                     
                     <VerticalTimelineElement
@@ -63,13 +65,14 @@ class Education extends React.Component {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red', }}
                         icon={<Image src={CoTuong} size='medium' circular />}
                     >
-                        <h3 className="vertical-timeline-element-title">Games cờ tướng</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Nhập Môn Trí Tuệ Nhân Tạo</h4>
+                        <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_chess.title'} /></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_chess.subtitle'} /></h4>
+                        <p className="project__text-description"><IntlMessages id={'topbar.project_chess.description'} /></p>
                         <p className="project__text-description">
-                        Project này là đồ án cuối kỳ của môn học <strong>Nhập môn trí tuệ nhân tạo</strong>. Mục đích của đồ án này là áp dụng được những thuật toán, giải thuật tìm kiếm từ cơ bản đến năng cao vào games, games có thể đánh với máy và máy chơi bằng nhiều thuật toán khác nhau. Bên dưới là link sourcecode.
+                            <IntlMessages id={'topbar.project.linkcode'} />: 
+                            <a  href="https://github.com/lephong2017/AI-CoTuong"> <IntlMessages id={'topbar.project.linkdemo.description'} /></a>
                         </p>
-                        <p className="project__text-description">Link code: <a  href="https://github.com/lephong2017/AI-CoTuong">Click vô đây nè!</a></p>
-                        <span class="vertical-timeline-element-date left">06/2018 - Project and Present</span>
+                        <span class="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_chess.date'} /></span>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -77,11 +80,9 @@ class Education extends React.Component {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: 'red', }}
                         icon={<Image src={SmartphoneShop} size='medium' circular />}
                     >
-                        <h3 className="vertical-timeline-element-title">Smartphone shopping websites</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Lập Trình Web</h4>
-                        <p className="project__text-description">
-                        Project này là đồ án cuối kỳ của môn học <strong>Lập Trình Web</strong> gồm 4 thành viên và tôi là trưởng nhóm. Thật tuyệt vời khi nhóm chúng tôi trọn vẹn điểm 10. Đây link video ghi lại khoảng khắc tôi báo cáo.
-                        </p>
+                        <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_shoppingweb.title'} /></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_shoppingweb.subtitle'} /></h4>
+                        <p className="project__text-description"><IntlMessages id={'topbar.project_shoppingweb.description'} /></p>
                         <iframe 
                             title="Báo cáo project website cuối kỳ môn học Lập Trình Web"
                             width="260" 
@@ -90,7 +91,7 @@ class Education extends React.Component {
                             frameborder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
-                        <span class="vertical-timeline-element-date right">2016 - Project and Present</span>
+                        <span class="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_shoppingweb.date'} /></span>
 
                     </VerticalTimelineElement>
                     
@@ -99,22 +100,23 @@ class Education extends React.Component {
                         iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
                         // icon={<Image src={Boom} size='medium' circular />}
                     >
-                        <h3 className="vertical-timeline-element-title">Games đặt boom</h3>
-                        <h4 className="vertical-timeline-element-subtitle">Thiết Kế Hướng Đối Tượng</h4>
+                        <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_boom.title'} /></h3>
+                        <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_boom.subtitle'} /></h4>
+                        <p className="project__text-description"><IntlMessages id={'topbar.project_boom.description'} /></p>
                         <p className="project__text-description">
-                            Đây là một trò chời được lập trình bằng ngôn ngữ java, đồ án này được hoàn thành bởi team chúng tôi gồm 4 người, và tôi là nhóm trường. Trò chơi được lập trình theo hướng đối tượng. Bên dưới là link soucecode.
+                            <IntlMessages id={'topbar.project.linkcode'} />: 
+                            <a href="https://github.com/lephong2017/OOD-GameBoom"> <IntlMessages id={'topbar.project.linkdemo.description'} /></a>
                         </p>
-                        <p className="project__text-description">Link code: <a href="https://github.com/lephong2017/OOD-GameBoom">Click vô đây nè!</a></p>
-                        <span class="vertical-timeline-element-date left">2016 - Project and Present</span>
+                        <span class="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_boom.date'} /></span>
                         
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
                         iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
                         // icon={<Avatar size="small" icon="user" />}
                     >
-                        <h3 className="vertical-timeline-element-title">Bắt đầu học đại học tại trường Đại Học Nông Lâm</h3>
+                        <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_start.title'} /></h3>
                         <h4 className="vertical-timeline-element-subtitle"> </h4>
-                        <span class="vertical-timeline-element-date right">2015</span>
+                        <span class="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_start.date'} /></span>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </div>

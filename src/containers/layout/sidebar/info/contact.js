@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid,  } from 'semantic-ui-react';
 import './info.scss';
+import IntlMessages from 'components/intl-message/intlMessages';
+
 class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -22,66 +24,56 @@ class Contact extends React.Component {
             <div className="cv-sidebar__personal">
                 <Grid padded columns={1} relaxed>
                     <Grid.Row columns={1} className="sb-content-personal-title__wrapper">
-                        <h3 className="sb-content-personal__title"> Contact </h3>
+                        <h3 className="sb-content-personal__title"> <IntlMessages id={'sidebar.contact'} /> </h3>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6} >
-                            <span className="sb-personal__title"> Mobile: </span>
+                            mobile={16} tablet={16} computer={16} >
+                            <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_mobile'} />: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10} >
+                            mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__description">{contact.mobile}</span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6} >
-                            <span className="sb-personal__title"> Home: </span>
+                            mobile={16} tablet={16} computer={16} >
+                            <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_home'} />: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10} >
+                            mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__description">{contact.home} </span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6} >
-                            <span className="sb-personal__title"> Email: </span>
+                            mobile={16} tablet={16} computer={16} >
+                            <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_email'} />: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10} >
+                            mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__description">{contact.email} </span>
                         </Grid.Column>
                     </Grid.Row>
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={16} tablet={16} computer={16} >
-                            <span className="sb-personal__title"> Email Student: </span>
+                            <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_emailStudent'} />: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={10} computer={10} >
+                            mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__description">{contact.emailStudent} </span>
                         </Grid.Column>
                     </Grid.Row>
-                    {/* <Grid.Row columns={2} className="cv-sidebar-content__personal">
-                        <Grid.Column 
-                            mobile={5} tablet={6} computer={6} >
-                            <span className="sb-personal__title"> Skype: </span>
-                        </Grid.Column>
-                        <Grid.Column 
-                            mobile={11} tablet={10} computer={10} >
-                            <span className="sb-personal__description">{contact.skype} </span>
-                        </Grid.Column>
-                    </Grid.Row> */}
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
-                            mobile={5} tablet={6} computer={6} >
-                            <span className="sb-personal__title"> Address: </span>
+                            mobile={16} tablet={16} computer={16} >
+                            <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_address'} />: </span>
                         </Grid.Column>
                         <Grid.Column 
-                            mobile={11} tablet={16} computer={16}     >
-                            <span className="sb-personal__description">{contact.address} </span>
+                            mobile={16} tablet={16} computer={16}     >
+                            <span className="sb-personal__description"><IntlMessages id={'sidebar.contact_addressDetail'} /> </span>
                         </Grid.Column>
                     </Grid.Row>
                 </Grid>

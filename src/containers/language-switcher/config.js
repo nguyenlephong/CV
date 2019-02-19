@@ -6,8 +6,13 @@ import spanishLang from 'images/image-cpn/flag/spain.svg';
 import frenchLang from 'images/image-cpn/flag/france.svg';
 import italianLang from 'images/image-cpn/flag/italy.svg';
 
+let defaultLang = language;
+export const changeLang = (lang) =>{
+  return defaultLang= lang;
+}
+
 const config = {
-  defaultLanguage: language,
+  defaultLanguage: defaultLang,
   options: [
     {
       languageId: 'Vietnamese',

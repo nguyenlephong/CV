@@ -1,11 +1,6 @@
 import React  from 'react';
 import PublicRoutes from 'route/router';
-import { LocaleProvider } from "antd";
-import { IntlProvider } from "react-intl";
-import AppLocale from "./language-provider";
-import config, {
-  getCurrentLanguage
-} from "containers/language-switcher/config";
+
 import { createStore, applyMiddleware ,compose} from 'redux'; 
 import appReducers from './redux/index';
 import thunk from 'redux-thunk';
@@ -24,24 +19,12 @@ const store = createStore(
     ),
 );
 
-const currentAppLocale =
-  AppLocale[getCurrentLanguage(config.defaultLanguage || "Vietnamese").locale];
-  
+ 
 const DashApp = () => ( 
-  
-  <LocaleProvider locale={currentAppLocale.antd}>
-    <IntlProvider
-      locale={currentAppLocale.locale}
-      messages={currentAppLocale.messages}
-    >
-      
-    {console.log(currentAppLocale)}
-          <Provider store={store}> 
-            <PublicRoutes history={history} />
-          </Provider>
-    </IntlProvider>
-  </LocaleProvider>
+    <Provider store={store}> 
+      <PublicRoutes history={history} />
+    </Provider>
 );
 
 export default DashApp;
-export { AppLocale };
+

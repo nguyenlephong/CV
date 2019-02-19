@@ -83,13 +83,6 @@
        font-weight: 450;
     }
 
-    // .textLeft {
-    //     text-align: left;
-    // }
-
-    // .textRight {
-    //     text-align: right;
-    // }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -125,3 +118,12 @@
         margin-left: 20px;
     }
 }
+
+.btn-group__profile {
+    display: flex;
+    @media only screen and (max-width: 640px) {
+        flex-direction: column;
+        margin-bottom: 5px;
+    }
+}
+

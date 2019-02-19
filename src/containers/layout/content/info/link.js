@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, Icon } from 'semantic-ui-react';
 import './index.scss';
+import IntlMessages from 'components/intl-message/intlMessages';
+
 class Link extends React.Component {
     constructor(props) {
         super(props);
@@ -28,11 +30,11 @@ class Link extends React.Component {
         const {link, shortLink, colorIcon, iconName, } = this.state;
         return (
              <div className="cv-content-profile__sumary">
-                <h2 className="pf-sumary__title">Các liên kết mạng xã hội</h2>
+                <h2 className="pf-sumary__title"><IntlMessages id={'topbar.menu_link.title'} /></h2>
                 
                 <div className="pf-sumary__block_description">
                     <span className="pf-sumary__description">
-                    Dưới đây là các link liên kết mạng xã hội của riêng tôi.
+                    <IntlMessages id={'topbar.menu_link.summary'} />
                     </span>
                 </div>
                 <Grid padded columns={1} relaxed>

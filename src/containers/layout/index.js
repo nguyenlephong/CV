@@ -7,6 +7,7 @@ import {
     Sidebar,
 } from 'semantic-ui-react';
 import './layout-main.scss';
+
 import SidebarContent from 'containers/layout/sidebar/index';
 import Content from 'containers/layout/content/index';
 import MenuContent from 'containers/layout/menu/index';
@@ -33,7 +34,7 @@ VerticalSidebar.propTypes = {
 class MainLayout extends React.Component {
     state = {
         isOpen: true,
-        itemMenuActive: 'link',
+        itemMenuActive: 'profile',
         vertical: false,
         screenWidth: window.innerWidth,
         screenHeight: window.innerHeight,
@@ -57,8 +58,6 @@ class MainLayout extends React.Component {
         }else{
           this.setState({ isOpen: true});
         }
-
-
     }
     
     componentDidMount() {

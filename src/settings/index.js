@@ -17,11 +17,12 @@ const jwtConfig = {
 };
 
 // const language = 'english';
-const language = 'Vietnamese';
+let language = 'Vietnamese';
+
 export {
   siteConfig,
   language,
-  jwtConfig
+  jwtConfig,
 };
 
 export const frontPageConfig = {
