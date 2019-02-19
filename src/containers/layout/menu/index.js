@@ -74,6 +74,16 @@ class MenuExampleIcons extends Component {
         >
           <IntlMessages id={'topbar.menu_link'} />
         </Menu.Item>
+        
+        <a href="./CV/CV.pdf">
+          <Menu.Item
+            name='download'
+            active={activeItem === 'download'}
+            onClick={this.handleItemClick}
+          >
+            <IntlMessages id={'topbar.menu_download'} />
+          </Menu.Item>
+        </a>
 
         <Menu.Menu position='right'>
           <Dropdown item text={<IntlMessages id={'topbar.menu_language'} />}>
