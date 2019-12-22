@@ -4,7 +4,7 @@ import './index.scss';
 import { Button, Header, Image, Modal, Icon } from 'semantic-ui-react';
 import ScoreBoard from 'images/project/scoreboard.JPG';
 import IntlMessages from 'components/intl-message/intlMessages';
-
+import ImageGallery from 'containers/layout/content/info/image-gallery/ImageSlider';
 class ProfileSumary extends React.Component {
     state = { 
         open: false , 
@@ -32,8 +32,10 @@ class ProfileSumary extends React.Component {
             closeOnEscape, closeOnDimmerClick , 
             colorIcon, iconName, 
             iconNameCheck, colorIconCheck} = this.state;
+        
         return (
             <div className="cv-content-profile__sumary">
+                
                 <h2 className="pf-sumary__title"><IntlMessages id={'topbar.profile.title'} /></h2>
                 
                 <div className="pf-sumary__block_description">
@@ -110,6 +112,10 @@ class ProfileSumary extends React.Component {
                     </div>
                 </div>
 
+                <div className="pf-sumary__block_description">
+                    <ImageGallery />
+                </div>
+                
                 <div className="pf-sumary__block_description">
                     <div className="btn-group__profile">
                         <Button color='brown' onClick={this.closeConfigShow(true, false)}>Xem bảng điểm</Button>

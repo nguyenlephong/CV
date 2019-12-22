@@ -57,7 +57,7 @@ class Education extends React.Component {
                             frameborder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
-                        <span class="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_rollcall.date'} /></span>
+                        <span className="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_rollcall.date'} /></span>
                     </VerticalTimelineElement>
                     
                     <VerticalTimelineElement
@@ -72,7 +72,7 @@ class Education extends React.Component {
                             <IntlMessages id={'topbar.project.linkcode'} />: 
                             <a  href="https://github.com/lephong2017/AI-CoTuong"> <IntlMessages id={'topbar.project.linkdemo.description'} /></a>
                         </p>
-                        <span class="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_chess.date'} /></span>
+                        <span className="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_chess.date'} /></span>
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -91,7 +91,7 @@ class Education extends React.Component {
                             frameborder="0" 
                             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                             allowfullscreen></iframe>
-                        <span class="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_shoppingweb.date'} /></span>
+                        <span className="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_shoppingweb.date'} /></span>
 
                     </VerticalTimelineElement>
                     
@@ -107,7 +107,7 @@ class Education extends React.Component {
                             <IntlMessages id={'topbar.project.linkcode'} />: 
                             <a href="https://github.com/lephong2017/OOD-GameBoom"> <IntlMessages id={'topbar.project.linkdemo.description'} /></a>
                         </p>
-                        <span class="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_boom.date'} /></span>
+                        <span className="vertical-timeline-element-date left"><IntlMessages id={'topbar.project_boom.date'} /></span>
                         
                     </VerticalTimelineElement>
                     <VerticalTimelineElement
@@ -116,7 +116,7 @@ class Education extends React.Component {
                     >
                         <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_start.title'} /></h3>
                         <h4 className="vertical-timeline-element-subtitle"> </h4>
-                        <span class="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_start.date'} /></span>
+                        <span className="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_start.date'} /></span>
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </div>
