@@ -1,3 +1,8 @@
 .ui.vertical.icon.menu {
     width: 100% !important;
+    
+}
+
+.ui.icon.menu .item {
+    color: #0c278c !important;
 }

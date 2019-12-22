@@ -6,11 +6,14 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
         font-weight: bold;
+        color: #0c278c
     }
 
     .pf-sumary__block_description {
         text-indent: 20px;
         margin: 10px 0;
+        color: black;
+        font-weight: 520;
 
         .pf-sumary__strong {
             margin-left: 40px;
@@ -34,6 +37,8 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
         font-weight: bold;
+        color: #0c278c ;
+
         .pf-skill__hardskill {
             
         }
@@ -46,6 +51,7 @@
         text-transform: uppercase;
         border-bottom: 1px solid rgba(0, 0, 0, 0.12);
         font-weight: bold;
+        color: #0c278c
     }
     
     .project__text-description {

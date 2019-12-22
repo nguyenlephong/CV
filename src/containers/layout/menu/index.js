@@ -23,7 +23,11 @@ class MenuExampleIcons extends Component {
     const { activeItem } = this.state
     const {hideSidebar, showSidebar, isOpenSidebar, vertical, changeLanguage} = this.props;
     return (
-      <Menu styles={{width: '100% !importance'}} vertical={vertical} icon color="brown">
+      <Menu style={{
+        width: '100% !important',  
+        backgroundColor: '#d6d6d6', 
+        color: '#0c278c'
+        }} vertical={vertical} icon color="brown">
 
         {(!isOpenSidebar)?
           <Menu.Item name='showSidebar' active={activeItem === 'showSidebar'} onClick={hideSidebar}>

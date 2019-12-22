@@ -13,7 +13,7 @@ class Contact extends React.Component {
                 email: 'nguyenlephong1997@gmail.com',
                 emailStudent: '15130136@st.hcmuaf.edu.vn',
                 skype: '0985490107',
-                address: 'KP6, phường Linh Trung, quận Thủ Đức, Đại học Nông Lâm TP HCM'
+                address: 'Nguyễn Oanh, quận Gò Vấp'
             }
         };
     } 
@@ -56,7 +56,7 @@ class Contact extends React.Component {
                             <span className="sb-personal__description">{contact.email} </span>
                         </Grid.Column>
                     </Grid.Row>
-                    <Grid.Row columns={2} className="cv-sidebar-content__personal">
+                    {/* <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_emailStudent'} />: </span>
@@ -65,7 +65,7 @@ class Contact extends React.Component {
                             mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__description">{contact.emailStudent} </span>
                         </Grid.Column>
-                    </Grid.Row>
+                    </Grid.Row> */}
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={16} tablet={16} computer={16} >

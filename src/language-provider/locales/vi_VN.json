@@ -1,6 +1,6 @@
 {
-    "sidebar.personal": "Cá nhân",
-    "sidebar.contact": "Liên hệ",
+    "sidebar.personal": "Thông tin cá nhân",
+    "sidebar.contact": "Thông tin liên hệ",
     "sidebar.personal_name": "Họ và tên",
     "sidebar.personal_nameDetail": "Nguyễn Lê Phong",
     "sidebar.personal_birthday": "Ngày sinh",
@@ -9,7 +9,7 @@
     "sidebar.contact_email": "Email cá nhân",
     "sidebar.contact_emailStudent": "Email sinh viên",
     "sidebar.contact_address": "Địa chỉ",
-    "sidebar.contact_addressDetail": "KP6, phường Linh Trung, quận Thủ Đức, Đại học Nông Lâm Tp HCM",
+    "sidebar.contact_addressDetail": "Nguyễn Oanh, quận Gò Vấp",
 
     "topbar.menu_hideInfo": "Ẩn thông tin",
     "topbar.menu_showInfo": "Xem thông tin",
