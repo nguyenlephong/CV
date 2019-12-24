@@ -116,7 +116,7 @@ class ProfileSumary extends React.Component {
                     <ImageGallery />
                 </div>
                 
-                <div className="pf-sumary__block_description">
+                {/* <div className="pf-sumary__block_description">
                     <div className="btn-group__profile">
                         <Button color='brown' onClick={this.closeConfigShow(true, false)}>Xem bảng điểm</Button>
                         <Button color='teal' onClick={this.closeConfigShowDeCuong(true, false)}>Xem đề cương luận văn</Button>
@@ -170,7 +170,7 @@ class ProfileSumary extends React.Component {
                         </Modal.Actions>
                     </Modal>
                     
-                </div>
+                </div> */}
 
             </div>
         );
