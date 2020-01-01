@@ -16,8 +16,8 @@ const jwtConfig = {
   secretKey: 'secretKey'
 };
 
-// const language = 'english';
-let language = 'Vietnamese';
+const language = 'english';
+// let language = 'Vietnamese';
 
 export {
   siteConfig,

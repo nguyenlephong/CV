@@ -34,10 +34,8 @@ class ProfileContent extends React.Component {
                             <Link/>:
                             <div></div>
                         }
-                        
                     </Grid.Column>
                 </Grid.Row>
-                
             </Grid>
         );
     }

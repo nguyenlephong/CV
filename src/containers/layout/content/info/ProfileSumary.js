@@ -171,7 +171,7 @@ class ProfileSumary extends React.Component {
                     </Modal>
                     
                 </div> */}
-
+                
             </div>
         );
     }

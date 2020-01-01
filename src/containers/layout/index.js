@@ -73,7 +73,6 @@ class MainLayout extends React.Component {
         const {  isOpen, screenHeight, screenWidth } = this.state;
         return (
             <div className="cv-main-layout">
-                
                 <Grid padded columns={1} relaxed>
                     <Grid.Row>
                         <Grid.Column 
@@ -103,7 +102,8 @@ class MainLayout extends React.Component {
                         <Grid.Column 
                             mobile={16} tablet={(isOpen)?12:16} computer={(isOpen)?12:16}
                             >
-                            <div className="cv-content-wrapper">
+                            <div className="cv-content-wrapper" >
+                               
                             {(this.state.vertical)?
                                 <MenuContent 
                                     hideSidebar={()=>this.setState({isOpen: true})}
