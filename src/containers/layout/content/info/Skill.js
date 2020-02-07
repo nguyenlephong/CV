@@ -74,6 +74,10 @@ class Work extends React.Component {
                                     <Icon color={colorIcon} name={iconName} /> 
                                     <IntlMessages id={'topbar.skill.framworks.description3'} />.
                                 </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.framworks.description4'} />.
+                                </div>
                             </Grid.Column>
                         </Grid.Row>
 
@@ -93,6 +97,25 @@ class Work extends React.Component {
                                 <div>
                                     <Icon color={colorIcon} name={iconName} /> 
                                     <IntlMessages id={'topbar.skill.database.description2'} />.
+                                </div>
+                            </Grid.Column>
+                        </Grid.Row>
+                        <Grid.Row columns={2} className="content-block_language">
+                            <Grid.Column className="img-description"
+                                mobile={16} tablet={5} computer={5}
+                                >
+                                    <img src={Databases} alt="Deployment" />
+                            </Grid.Column>
+                            <Grid.Column className="text-description"
+                                mobile={16} tablet={11} computer={11}
+                                >
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.deploy.description1'} />.
+                                </div>
+                                <div>
+                                    <Icon color={colorIcon} name={iconName} /> 
+                                    <IntlMessages id={'topbar.skill.deploy.description2'} />.
                                 </div>
                             </Grid.Column>
                         </Grid.Row>
