@@ -16,6 +16,11 @@
   "sidebar.info_text.ip_client": "Client IP: ",
   "sidebar.info_text.city_user_client": "City: ",
 
+  "sidebar.info_text.thank_for_like_title": "Thank you for liking me!",
+  "sidebar.info_text.thank_for_like_description": "You just gave me a thumbs up about the impression of the CV I built Hii thank you very much!",
+  "sidebar.info_text.err_for_like_title": "Thank you for your enthusiastic support!",
+  "sidebar.info_text.err_for_like_description": "You like success, you give yourself only a like is okay, thank you very much!",
+
   
 
   "topbar.menu_hideInfo": "Hide info",

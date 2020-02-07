@@ -8,8 +8,8 @@ import Config from 'settings/index';
 import IntlMessages from 'components/intl-message/intlMessages';
 import $ from 'jquery';
 import { notification } from 'antd';
-
-
+import {showNotification} from 'components/ptp__notification/Notification'
+import { injectIntl } from 'react-intl';
 class Sidebar extends React.Component {
     constructor(props) {
         super(props);
@@ -69,19 +69,15 @@ class Sidebar extends React.Component {
     }
 
     openNotificationLikeError = () => {
-        notification["error"]({
-          message: 'Cảm ơn bạn đã nhiệt tình ủng hộ',
-          description:
-            'Bạn đã like rồi, bạn cho mình một like là được rồi nè, cảm ơn bạn nhiều nhé!',
-        });
+        const {intl} = this.props
+        showNotification( intl.formatMessage({id: 'sidebar.info_text.err_for_like_title'}),
+        intl.formatMessage({id: 'sidebar.info_text.err_for_like_description'}), "topRight","error");
     };
 
     openNotificationLikeSuccess = () => {
-        notification["success"]({
-          message: 'Cảm ơn bạn đã nhấn like',
-          description:
-            'Bạn vừa cho mình một like về độ ấn tượng của CV do mình xây dựng nên. Hii cảm ơn bạn nhiều lắm!',
-        });
+        const {intl} = this.props
+        showNotification( intl.formatMessage({id: 'sidebar.info_text.thank_for_like_title'}),
+        intl.formatMessage({id: 'sidebar.info_text.thank_for_like_description'}), "topRight","success");
     };
 
     render() {
@@ -129,4 +125,4 @@ class Sidebar extends React.Component {
 }
 
 
-export default Sidebar;
+export default injectIntl(Sidebar);
