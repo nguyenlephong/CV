@@ -10,6 +10,13 @@
   "sidebar.contact_emailStudent": "Email Student",
   "sidebar.contact_address": "Address",
   "sidebar.contact_addressDetail": "Nguyen Oanh, Go Vap",
+  
+  "sidebar.info_text.version": "Version: ",
+  "sidebar.info_text.person_access": "Like: ",
+  "sidebar.info_text.ip_client": "Client IP: ",
+  "sidebar.info_text.city_user_client": "City: ",
+
+  
 
   "topbar.menu_hideInfo": "Hide info",
   "topbar.menu_showInfo": "Show info",

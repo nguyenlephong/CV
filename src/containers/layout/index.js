@@ -131,7 +131,6 @@ class MainLayout extends React.Component {
                                     itemMenuActive={this.state.itemMenuActive}/>
                             </div>
                         </Grid.Column>
-
                     </Grid.Row>
                 </Grid>
             </div>

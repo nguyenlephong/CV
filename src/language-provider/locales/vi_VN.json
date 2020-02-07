@@ -11,6 +11,11 @@
     "sidebar.contact_address": "Địa chỉ",
     "sidebar.contact_addressDetail": "Nguyễn Oanh, quận Gò Vấp",
 
+    "sidebar.info_text.version": "Phiên bản: ",
+    "sidebar.info_text.person_access": "Số lượt thích: ",
+    "sidebar.info_text.ip_client": "Địa chỉ IP: ",
+    "sidebar.info_text.city_user_client": "Thành phố: ",
+
     "topbar.menu_hideInfo": "Ẩn thông tin",
     "topbar.menu_showInfo": "Xem thông tin",
     "topbar.menu_profile": "Thông tin cá nhân",
