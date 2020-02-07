@@ -7,7 +7,6 @@ import Contact from './info/contact';
 import Config from 'settings/index';
 import IntlMessages from 'components/intl-message/intlMessages';
 import $ from 'jquery';
-import { notification } from 'antd';
 import {showNotification} from 'components/ptp__notification/Notification'
 import { injectIntl } from 'react-intl';
 class Sidebar extends React.Component {
@@ -35,7 +34,7 @@ class Sidebar extends React.Component {
 
     updateLikeNumber = () => {
         let that = this;
-        $.get("http://5bbc78c229214000136cbff6.mockapi.io/api/cv", function(response) {
+        $.get("https://5bbc78c229214000136cbff6.mockapi.io/api/cv", function(response) {
             that.setState({likeNumber: response[0].likeNumber})
         });
     }

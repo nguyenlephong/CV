@@ -79,7 +79,7 @@ class MenuExampleIcons extends Component {
           <IntlMessages id={'topbar.menu_link'} />
         </Menu.Item>
         
-        <a href="./CV/CV.pdf">
+        <a href="./CV/CV_v1.pdf">
           <Menu.Item
             name='download'
             active={activeItem === 'download'}
