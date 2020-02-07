@@ -7,7 +7,7 @@ import IntlMessages from 'components/intl-message/intlMessages';
 
 import { Grid, Icon } from 'semantic-ui-react';
 import './index.scss';
-import BublesConponents from '../../bubles/Bubles';
+// import BublesConponents from '../../bubles/Bubles';
 class Work extends React.Component {
     constructor(props) {
         super(props);

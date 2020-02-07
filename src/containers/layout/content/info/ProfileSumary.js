@@ -32,8 +32,9 @@ class ProfileSumary extends React.Component {
     closeDeCuong = () => this.setState({ openDeCuong: false })
     
     render() {
-        const { open, openDeCuong ,
-            closeOnEscape, closeOnDimmerClick , 
+        const { 
+            // open, openDeCuong ,
+            // closeOnEscape, closeOnDimmerClick , 
             colorIcon, iconName, 
             iconNameCheck, colorIconCheck} = this.state;
         
