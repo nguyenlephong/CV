@@ -8,74 +8,39 @@ import CertificateTester from 'images/profile/certificate_tester.JPG';
 import Avatar from 'images/profile/avartar.jpg';
 class ListOfvideosComponent extends React.Component {
 
-    changeFullScreen=(id)=> {
-        var elem = document.getElementById(id);
-        if(elem){
-           this.openFullscreen(elem);
-        }
-    }
-    
-    openFullscreen = (elem) => {
-        if (elem.requestFullscreen) {
-          elem.requestFullscreen();
-        } else if (elem.mozRequestFullScreen) { /* Firefox */
-          elem.mozRequestFullScreen();
-        } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
-          elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) { /* IE/Edge */
-          elem.msRequestFullscreen();
-        }
-    }
-    
     render() {
         
         return (
             <div className="list-of-video_wrapper">
-                <div id="score_board-video" 
-                    style={{
-                        backgroundImage: `url(${ScoreBoard})`
-                    }}
-                    className="item_videos" 
-                    onClick={()=>this.changeFullScreen("score_board-video")}>
-
+                <div id="score_board-video" className="item_videos"  >
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/WCy_2q4zrWY" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
                 </div>
-                <div id="Award-video" 
-                    style={{
-                        backgroundImage: `url(${Award})`
-                    }}
-                    className="item_videos" 
-                    onClick={()=>this.changeFullScreen("Award-video")}>
-
+                <div id="score_board-video" className="item_videos"  >
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/ZuUbsIkwUIg" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
                 </div>
-                <div id="CertificateBestOfRookie-video" 
-                    style={{
-                        backgroundImage: `url(${CertificateBestOfRookie})`
-                    }}
-                    className="item_videos" 
-                    onClick={()=>this.changeFullScreen("CertificateBestOfRookie-video")}>
+                <div id="score_board-video" className="item_videos"  >
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/Z2HDjakeb4A" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
                 </div>
-                <div id="CertificateTester-video" 
-                    style={{
-                        backgroundImage: `url(${CertificateTester})`
-                    }}
-                    className="item_videos" 
-                    onClick={()=>this.changeFullScreen("CertificateTester-video")}>
-
+                <div id="score_board-video" className="item_videos"  >
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/uPdjFb_IDzg" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
                 </div>
-                <div id="Essay-video" 
-                    style={{
-                        backgroundImage: `url(${Essay})`
-                    }}
-                    className="item_videos" 
-                    onClick={()=>this.changeFullScreen("Essay-video")}>
-
-                </div>
-                <div id="Avatar-video" 
-                    style={{
-                        backgroundImage: `url(${Avatar})`
-                    }}
-                    className="item_videos" 
-                    onClick={()=>this.changeFullScreen("Avatar-video")}>
+                <div id="score_board-video" className="item_videos"  >
+                    <iframe width="560" height="315" 
+                        src="https://www.youtube.com/embed/8-kR_xyClmo" 
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen></iframe>
                 </div>
             </div>
         );

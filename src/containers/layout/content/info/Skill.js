@@ -131,7 +131,7 @@ class Work extends React.Component {
                     </Grid>
 
                 </div>
-                <BublesConponents/>
+                {/* <BublesConponents/> */}
             </div>
         );
     }
