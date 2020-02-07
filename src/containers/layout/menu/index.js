@@ -10,7 +10,7 @@ const { changeLanguage } = actions;
 
 class MenuExampleIcons extends Component {
   state = { 
-    activeItem: 'anhmap',
+    activeItem: 'profile',
   }
 
   handleItemClick = (e, { name }) => {

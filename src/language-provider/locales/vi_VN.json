@@ -73,7 +73,7 @@
 
     "topbar.project_rentalcar.title": "Ứng dụng web cho thuê xe",
     "topbar.project_rentalcar.subtitle": "Thương Mại Điện Tử",
-    "topbar.project_rentalcar.description": "Đồ án môn học này với mục đích là viết một ứng dụng có sử dụng các dịch vụ thanh toán online, đồng thời xây dựng một mô hình kinh doanh nhầm mang lại lợi nhuận. Đây là đồ án phục vụ cho môn học Thương mại điện tử. Dưới đây là link demo và sourcecode",
+    "topbar.project_rentalcar.description": "Đồ án môn học này với mục đích là viết một ứng dụng có sử dụng các dịch vụ thanh toán online, đồng thời xây dựng một mô hình kinh doanh nhầm mang lại lợi nhuận. Đây là đồ án phục vụ cho môn học Thương mại điện tử.",
     "topbar.project_rentalcar.date": "21/01/2019 - Dự án",
     
     "topbar.project_rollcall.title": "Ứng dụng điểm danh sinh viên bằng nhận diện khuôn mặt",
@@ -83,7 +83,7 @@
 
     "topbar.project_chess.title": "Games cờ tướng",
     "topbar.project_chess.subtitle": "Nhập Môn Trí Tuệ Nhân Tạo",
-    "topbar.project_chess.description": "Project này là đồ án cuối kỳ của môn học Nhập môn trí tuệ nhân tạo. Mục đích của đồ án này là áp dụng được những thuật toán, giải thuật tìm kiếm từ cơ bản đến năng cao vào games, games có thể đánh với máy và máy chơi bằng nhiều thuật toán khác nhau. Bên dưới là link sourcecode.",
+    "topbar.project_chess.description": "Project này là đồ án cuối kỳ của môn học Nhập môn trí tuệ nhân tạo. Mục đích của đồ án này là áp dụng được những thuật toán, giải thuật tìm kiếm từ cơ bản đến năng cao vào games, games có thể đánh với máy và máy chơi bằng nhiều thuật toán khác nhau.",
     "topbar.project.linkcode.description": "Click vô đây nè!",
     "topbar.project_chess.date": "06/2018 - Dự án",
     
@@ -94,7 +94,7 @@
     
     "topbar.project_boom.title": "Games đặt boom",
     "topbar.project_boom.subtitle": "Thiết Kế Hướng Đối Tượng",
-    "topbar.project_boom.description": "Đây là một trò chời được lập trình bằng ngôn ngữ java, đồ án này được hoàn thành bởi team chúng tôi gồm 4 người, và tôi là nhóm trường. Trò chơi được lập trình theo hướng đối tượng. Bên dưới là link soucecode.",
+    "topbar.project_boom.description": "Đây là một trò chời được lập trình bằng ngôn ngữ java, đồ án này được hoàn thành bởi team chúng tôi gồm 4 người, và tôi là nhóm trường. Trò chơi được lập trình theo hướng đối tượng.",
     "topbar.project_boom.date": "2016 - Dự án",
     
     "topbar.project_start.title": "Bắt đầu học đại học tại trường Đại Học Nông Lâm",

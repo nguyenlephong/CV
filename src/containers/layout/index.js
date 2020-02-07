@@ -34,7 +34,8 @@ VerticalSidebar.propTypes = {
 class MainLayout extends React.Component {
     state = {
         isOpen: true,
-        itemMenuActive: 'profile',
+        itemMenuActive: 'project',
+        // itemMenuActive: 'profile',
         vertical: false,
         screenWidth: window.innerWidth,
         screenHeight: window.innerHeight,

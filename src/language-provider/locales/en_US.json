@@ -72,9 +72,34 @@
   "topbar.project.linkcode": "Link code",
 
 
+  "topbar.project_banktool.title": "Car rental web application",
+  "topbar.project_banktool.subtitle": "Build flycam devices",
+  "topbar.project_banktool.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
+  "topbar.project_banktool.date": "01/03/2019 - Essay",
+
+  "topbar.project_wat.title": "Car rental web application",
+  "topbar.project_wat.subtitle": "Build flycam devices",
+  "topbar.project_wat.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
+  "topbar.project_wat.date": "01/03/2019 - Essay",
+
+  "topbar.project_savyu.title": "Car rental web application",
+  "topbar.project_savyu.subtitle": "Build flycam devices",
+  "topbar.project_savyu.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
+  "topbar.project_savyu.date": "01/03/2019 - Essay",
+
+  "topbar.project_froodini.title": "Car rental web application",
+  "topbar.project_froodini.subtitle": "Build flycam devices",
+  "topbar.project_froodini.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
+  "topbar.project_froodini.date": "01/03/2019 - Essay",
+
+  "topbar.project_essay.title": "Car rental web application",
+  "topbar.project_essay.subtitle": "Build flycam devices",
+  "topbar.project_essay.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
+  "topbar.project_essay.date": "01/03/2019 - Essay",
+
   "topbar.project_rentalcar.title": "Car rental web application",
   "topbar.project_rentalcar.subtitle": "Ecommerce",
-  "topbar.project_rentalcar.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects. Below is the demo link and sourcecode",
+  "topbar.project_rentalcar.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
   "topbar.project_rentalcar.date": "21/01/2019 - Project",
   
   "topbar.project_rollcall.title": "Student attendance application with face recognition",
@@ -84,7 +109,7 @@
 
   "topbar.project_chess.title": "Games chess",
   "topbar.project_chess.subtitle": "Artificial Intelligence",
-  "topbar.project_chess.description": "This project is the final project of the introductory course of artificial intelligence. The purpose of this project is to apply algorithms, search algorithms from basic to high level in games, games can be played with machines and players with many different algorithms. Below is the sourcecode link.",
+  "topbar.project_chess.description": "This project is the final project of the introductory course of artificial intelligence. The purpose of this project is to apply algorithms, search algorithms from basic to high level in games, games can be played with machines and players with many different algorithms.",
   "topbar.project_chess.date": "06/2018 - Project",
   
   "topbar.project_shoppingweb.title": "Smartphone shopping websites",
@@ -94,7 +119,7 @@
   
   "topbar.project_boom.title": "Games boom",
   "topbar.project_boom.subtitle": "Object Oriented Design",
-  "topbar.project_boom.description": "This is a game programmed in java language, this project was completed by our team of 4 people, and I am the school team. The game is programmed according to object orientation. Below is the soucecode link.",
+  "topbar.project_boom.description": "This is a game programmed in java language, this project was completed by our team of 4 people, and I am the school team. The game is programmed according to object orientation.",
   "topbar.project_boom.date": "2016 - Project",
   
   "topbar.project_start.title": "Started college at Nong Lam University",
