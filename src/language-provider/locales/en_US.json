@@ -72,30 +72,30 @@
   "topbar.project.linkcode": "Link code",
 
 
-  "topbar.project_banktool.title": "Car rental web application",
-  "topbar.project_banktool.subtitle": "Build flycam devices",
-  "topbar.project_banktool.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
-  "topbar.project_banktool.date": "01/03/2019 - Essay",
+  "topbar.project_banktool.title": "BankTool - ReactJS - Spring boot",
+  "topbar.project_banktool.subtitle": "Bank tools webapp",
+  "topbar.project_banktool.description": "This is the first project I work on alone, for me it is very difficult, but I have perfected it from project creation to deployment. For me it was a step up after more than a year of work.",
+  "topbar.project_banktool.date": "09/12/2019 - Working onsite at Mobivi company",
 
-  "topbar.project_wat.title": "Car rental web application",
-  "topbar.project_wat.subtitle": "Build flycam devices",
-  "topbar.project_wat.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
-  "topbar.project_wat.date": "01/03/2019 - Essay",
+  "topbar.project_wat.title": "WAT - React Typescript - Spring boot",
+  "topbar.project_wat.subtitle": "Authoring tool",
+  "topbar.project_wat.description": "I am one of the main developers of this project, an application for teachers who use to prepare lessons. Through this project, I have accumulated a lot of experience in software development, time management, and deployment.",
+  "topbar.project_wat.date": "01/09/2019 - Splus - Software",
 
-  "topbar.project_savyu.title": "Car rental web application",
-  "topbar.project_savyu.subtitle": "Build flycam devices",
-  "topbar.project_savyu.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
-  "topbar.project_savyu.date": "01/03/2019 - Essay",
+  "topbar.project_savyu.title": "Savyu - ReactNative",
+  "topbar.project_savyu.subtitle": "Savyu mobile app",
+  "topbar.project_savyu.description": "I was fortunate to trust and work for Synova, where I had the opportunity to use the ReactNative language that I learned, which helped me to become more proficient through this project. I have developed the application for 4 months. Here is the link describing it: https://www.savyu.com/",
+  "topbar.project_savyu.date": "01/05/2019 - Working Onsite at Synova company",
 
-  "topbar.project_froodini.title": "Car rental web application",
-  "topbar.project_froodini.subtitle": "Build flycam devices",
-  "topbar.project_froodini.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
-  "topbar.project_froodini.date": "01/03/2019 - Essay",
+  "topbar.project_froodini.title": "Froodini - ReactJS",
+  "topbar.project_froodini.subtitle": "Responsive website",
+  "topbar.project_froodini.description": "This is the first project when I participated in Splus - Software, a project for German customers, the application allows users to choose food and drinks to organize the event. Here is the link to this project product: https://froodini.com/",
+  "topbar.project_froodini.date": "01/03/2019 - Working at Splus - Software",
 
-  "topbar.project_essay.title": "Car rental web application",
+  "topbar.project_essay.title": "Graduation essay",
   "topbar.project_essay.subtitle": "Build flycam devices",
-  "topbar.project_essay.description": "This course project aims to write an application that uses online payment services, and build a wrong business model that brings profit. This is a project for e-commerce subjects.",
-  "topbar.project_essay.date": "01/03/2019 - Essay",
+  "topbar.project_essay.description": "This is a project for me that really marks a milestone in the university. My team and I have built a flying device (similar to flycam) capable of recognizing people through images and videos taken from the device. I have built this device with a socket-controlled mobile app and a webapp for data management. Besides, I have to build and use a lot of servers and services from third parties to complete this project. And I got a 9.4, some pretty impressive score. Below is the video of the day I defended this thesis.",
+  "topbar.project_essay.date": "01/03/2019 - Graduation essay",
 
   "topbar.project_rentalcar.title": "Car rental web application",
   "topbar.project_rentalcar.subtitle": "Ecommerce",
@@ -124,6 +124,14 @@
   
   "topbar.project_start.title": "Started college at Nong Lam University",
   "topbar.project_start.date": "2015",
+  
+  "topbar.project_splus.title": "Started working at splus software company",
+  "topbar.project_splus.date": "01-03-2019",
+
+  "topbar.project_propsplus.title": "Started working at Proptech Plus company",
+  "topbar.project_propsplus.date": "01-07-2018",
+
+
 
   "topbar.menu_link": "Link",
   "topbar.menu_link.title": "Social networking links",

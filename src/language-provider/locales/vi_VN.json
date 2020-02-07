@@ -70,6 +70,30 @@
     "topbar.project.linkdemo.description": "Click vô đây nè!",
     "topbar.project.linkcode": "Xem mã",
 
+    "topbar.project_banktool.title": "BankTool - ReactJS - Spring boot",
+    "topbar.project_banktool.subtitle": "Bank tools webapp",
+    "topbar.project_banktool.description": "Đây là dự án đầu tiên mà tôi làm việc một mình, với tôi nó rất khó, nhưng tôi đã hoàn thiện nó từ lúc dựng project tới lúc deployment ra product. Với tôi đó là một bước tiến sau hơn một năm làm việc.",
+    "topbar.project_banktool.date": "09/12/2019 - Làm việc onsite tại công ty Mobivi",
+  
+    "topbar.project_wat.title": "WAT - React Typescript - Spring boot",
+    "topbar.project_wat.subtitle": "Authoring tool",
+    "topbar.project_wat.description": "Tôi là một trong những thành viên chính phát triển dự án này, ứng dụng phục vụ cho người dùng là nhà giáo, dùng để soạn thảo bài giảng. Qua dự án này tôi đã tích luỹ khá nhiều kinh nghiệm về phát triển phần mềm, về quản lý thời gian, và cả về phần deployment, ...",
+    "topbar.project_wat.date": "01/09/2019 - Splus - Software",
+  
+    "topbar.project_savyu.title": "Savyu - ReactNative",
+    "topbar.project_savyu.subtitle": "Savyu mobile app",
+    "topbar.project_savyu.description": "Tôi may mắn được tin tưởng đi đánh thuê dự án cho công ty Synova, tại đó tôi đã có cơ hội được sử dụng ngôn ngữ ReactNative đã học, nó giúp tôi thành thạo hơn thông qua dự án này. Tôi đã phát triển ứng dụng trong 4 tháng. Và rồi dự án đã được đưa ra thị trường hoạt động và được khách hàng đón nhận rất nhanh chóng. Dưới đây là liên kết mô tả nó: https://www.savyu.com/",
+    "topbar.project_savyu.date": "01/05/2019 - Làm việc onsite tại công ty Synova",
+  
+    "topbar.project_froodini.title": "Froodini - ReactJS",
+    "topbar.project_froodini.subtitle": "Responsive website",
+    "topbar.project_froodini.description": "Đây là dự án đầu tiên khi mình tham gia làm việc tại Splus - Software, dự án phục vụ cho khách hàng người Đức, ứng dụng cho phép người dùng lựa chọn thực phẩm, thức uống để tổ chức sự kiện. Đây là liên kết đến sản phẩm dự án này: https://froodini.com/",
+    "topbar.project_froodini.date": "01/03/2019 - Làm việc tại Splus - Software",
+  
+    "topbar.project_essay.title": "Luận văn tốt nghiệp",
+    "topbar.project_essay.subtitle": "Thiết bị bay thông minh",
+    "topbar.project_essay.description": "Đây là project với mình nó thật sự đánh dấu cột mốc tại môi trường đại học. Mình cùng một bạn cùng team đã xây dựng được một thiết bị bay (giống tương tự như flycam) có khả năng nhận diện người qua hình ảnh, video chụp được từ thiết bị. Mình đã build thiết bị này cũng với một mobile app điều khiển qua socket và một webapp dùng để quản lý dữ liệu. Bên cạnh đó mình phải build và sử dụng rất nhiều server, service từ bên thứ ba để hoàn thành được dự án này. Và mình đã đạt được điểm 9.4, một số điểm khá ấn tượng. Bên dưới là video ngày mình bảo vệ luận văn này.",
+    "topbar.project_essay.date": "01/03/2019 - Làm luận văn",
 
     "topbar.project_rentalcar.title": "Ứng dụng web cho thuê xe",
     "topbar.project_rentalcar.subtitle": "Thương Mại Điện Tử",
@@ -99,6 +123,12 @@
     
     "topbar.project_start.title": "Bắt đầu học đại học tại trường Đại Học Nông Lâm",
     "topbar.project_start.date": "2015",
+
+    "topbar.project_splus.title": "Bắt đầu làm việc tại công ty splus software",
+    "topbar.project_splus.date": "01-03-2019",
+
+    "topbar.project_propsplus.title": "Bắt đầu làm việc tại công ty Proptech Plus",
+    "topbar.project_propsplus.date": "01-07-2018",
 
     "topbar.menu_link": "Liên kết",
     "topbar.menu_link.title": "Các liên kết mạng xã hội",

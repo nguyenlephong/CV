@@ -4,7 +4,7 @@ import './TimeLineProject.style.scss';
 import { Timeline, Icon,  } from 'antd';
 import IntlMessages from 'components/intl-message/intlMessages';
 import ChessGames from 'images/project/chess_games.jpg';
-
+import WAT_OVERVIEW from 'images/project/wat_overview.png';
 export default class TimelineComponent extends React.Component{
 
     render(){
@@ -25,6 +25,17 @@ export default class TimelineComponent extends React.Component{
                             <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_wat.title'} /></h3>
                             <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_wat.subtitle'} /></h4>
                             <p className="project__text-description"><IntlMessages id={'topbar.project_wat.description'} /></p>
+                            <div
+                                style={{
+                                    backgroundImage: `url(${WAT_OVERVIEW})`,
+                                    backgroundPosition: 'center',
+                                    backgroundRepeat: 'no-repeat',
+                                    backgroundSize: 'contain',
+                                    width: 480,
+                                    height: 270,
+                                }}
+                            >
+                            </div>
                         </div>
                     </Timeline.Item>
                     <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '32px' }} />} color="green">
@@ -49,6 +60,21 @@ export default class TimelineComponent extends React.Component{
                             <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_essay.title'} /></h3>
                             <h4 className="vertical-timeline-element-subtitle"><IntlMessages id={'topbar.project_essay.subtitle'} /></h4>
                             <p className="project__text-description"><IntlMessages id={'topbar.project_essay.description'} /></p>
+                            <iframe
+                                title="Thiết bị bay thông minh"
+                                width="480"
+                                height="270"
+                                src="https://www.youtube.com/embed/WCy_2q4zrWY"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        </div>
+                    </Timeline.Item>
+                    <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '32px' }} />} color="green">
+                        <div className="content-body-timeline-item">
+                            <span className="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_splus.date'} /></span>
+                            <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_splus.title'} /></h3>
+                            <h4 className="vertical-timeline-element-subtitle"> </h4>
                         </div>
                     </Timeline.Item>
                     <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '32px' }} />} color="green">
@@ -73,6 +99,13 @@ export default class TimelineComponent extends React.Component{
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
+                        </div>
+                    </Timeline.Item>
+                    <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '32px' }} />} color="green">
+                        <div className="content-body-timeline-item">
+                            <span className="vertical-timeline-element-date right"><IntlMessages id={'topbar.project_propsplus.date'} /></span>
+                            <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_propsplus.title'} /></h3>
+                            <h4 className="vertical-timeline-element-subtitle"> </h4>
                         </div>
                     </Timeline.Item>
                     <Timeline.Item dot={<Icon type="clock-circle-o" style={{ fontSize: '32px' }} />} color="green">
