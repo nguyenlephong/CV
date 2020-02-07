@@ -3,6 +3,7 @@ import ProgrammingLanguageInfo from './image/ProgrammingLanguages.png';
 import Frameworks from './image/FrameWorks.png';
 import Databases from './image/Database.png';
 import MySkill from './image/skill.png';
+import DeploymentPhotos from './image/deployment_small.png';
 import IntlMessages from 'components/intl-message/intlMessages';
 
 import { Grid, Icon } from 'semantic-ui-react';
@@ -104,7 +105,7 @@ class Work extends React.Component {
                             <Grid.Column className="img-description"
                                 mobile={16} tablet={5} computer={5}
                                 >
-                                    <img src={Databases} alt="Deployment" />
+                                    <img src={DeploymentPhotos} alt="Deployment" />
                             </Grid.Column>
                             <Grid.Column className="text-description"
                                 mobile={16} tablet={11} computer={11}
