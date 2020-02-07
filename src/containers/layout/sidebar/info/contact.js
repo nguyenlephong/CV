@@ -36,7 +36,7 @@ class Contact extends React.Component {
                             <span className="sb-personal__description">{contact.mobile}</span>
                         </Grid.Column>
                     </Grid.Row>
-                    <Grid.Row columns={2} className="cv-sidebar-content__personal">
+                    {/* <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__title"> <IntlMessages id={'sidebar.contact_home'} />: </span>
@@ -45,7 +45,7 @@ class Contact extends React.Component {
                             mobile={16} tablet={16} computer={16} >
                             <span className="sb-personal__description">{contact.home} </span>
                         </Grid.Column>
-                    </Grid.Row>
+                    </Grid.Row> */}
                     <Grid.Row columns={2} className="cv-sidebar-content__personal">
                         <Grid.Column 
                             mobile={16} tablet={16} computer={16} >

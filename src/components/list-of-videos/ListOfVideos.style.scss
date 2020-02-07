@@ -1,0 +1,21 @@
+.list-of-video_wrapper {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 12px;
+
+    // 4:3
+    .item_videos {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 200px;
+        height: 267px;
+    }
+
+    .item_videos:fullscreen {
+        background-size: contain;
+    }
+}

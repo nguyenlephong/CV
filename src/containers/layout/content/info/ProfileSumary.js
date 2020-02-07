@@ -1,10 +1,14 @@
 import React from 'react';
 import './index.scss'; 
 // import _ from 'lodash';
-import { Button, Header, Image, Modal, Icon } from 'semantic-ui-react';
-import ScoreBoard from 'images/project/scoreboard.JPG';
+import { 
+    // Button, Header, Image, Modal, 
+    Icon } from 'semantic-ui-react';
+// import ScoreBoard from 'images/project/scoreboard.JPG';
 import IntlMessages from 'components/intl-message/intlMessages';
-import ImageGallery from 'containers/layout/content/info/image-gallery/ImageSlider';
+// import ImageGallery from 'containers/layout/content/info/image-gallery/ImageSlider';
+import ImageGalleryComponent from 'components/list-of-photos';
+import VideoGalleryComponent from 'components/list-of-videos';
 class ProfileSumary extends React.Component {
     state = { 
         open: false , 
@@ -113,8 +117,22 @@ class ProfileSumary extends React.Component {
                 </div>
 
                 <div className="pf-sumary__block_description">
-                    <ImageGallery />
+                    <span className="pf-sumary__title-description">
+                        <Icon color={colorIcon} name={iconName} />  <strong><IntlMessages id={'topbar.profile.description.some_photo'} />:</strong>
+                    </span>
+
+                    <ImageGalleryComponent />
                 </div>
+                <div className="pf-sumary__block_description">
+                    <span className="pf-sumary__title-description">
+                        <Icon color={colorIcon} name={iconName} />  <strong><IntlMessages id={'topbar.profile.description.some_video'} />:</strong>
+                    </span>
+
+                    <VideoGalleryComponent />
+                </div>
+                {/* <div className="pf-sumary__block_description">
+                    <ImageGallery />
+                </div> */}
                 
                 {/* <div className="pf-sumary__block_description">
                     <div className="btn-group__profile">
