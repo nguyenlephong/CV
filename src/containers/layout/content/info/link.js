@@ -32,10 +32,10 @@ class Link extends React.Component {
         const {link, shortLink, colorIcon, iconName, } = this.state;
         return (
              <div className="cv-content-profile__sumary">
-                <h2 className="pf-sumary__title"><IntlMessages id={'topbar.menu_link.title'} /></h2>
+                <h2 className="pf-summary__title"><IntlMessages id={'topbar.menu_link.title'} /></h2>
                 
-                <div className="pf-sumary__block_description">
-                    <span className="pf-sumary__description">
+                <div className="pf-summary__block_description">
+                    <span className="pf-summary__description">
                     <IntlMessages id={'topbar.menu_link.summary'} />
                     </span>
                 </div>

@@ -11,7 +11,7 @@ class Education extends React.Component {
     render() {
         return (
             <div className="cv-content-project">
-                <h2 className="pf-sumary__title"><IntlMessages id={'topbar.menu_project.title'} /></h2>
+                <h2 className="pf-summary__title"><IntlMessages id={'topbar.menu_project.title'} /></h2>
                 <TimelineComponent/>
             </div>
         );

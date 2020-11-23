@@ -10,8 +10,8 @@ class Education extends React.Component {
     render() {
         return (
             <div className="cv-content-profile__sumary">
-                <h2 className="pf-sumary__title">Education</h2>
-                <span className="pf-sumary__description">
+                <h2 className="pf-summary__title">Education</h2>
+                <span className="pf-summary__description">
                 </span>
             </div>
         );
