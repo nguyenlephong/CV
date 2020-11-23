@@ -1,6 +1,4 @@
-import config, {
-  getCurrentLanguage
-} from 'containers/language-switcher/config';
+import config, {getCurrentLanguage} from 'containers/language-switcher/config';
 
 import actions from './actions';
 

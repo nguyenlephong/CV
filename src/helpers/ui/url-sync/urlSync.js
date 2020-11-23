@@ -7,6 +7,7 @@ export function getInitData() {
       initData.toggle.free_shipping === 'true' ? true : undefined;
   return initData;
 }
+
 export function setUrl(searchState) {
   const search = searchState
     ? `${window.location.pathname}?${qs.stringify(searchState)}`

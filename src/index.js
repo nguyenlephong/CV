@@ -9,7 +9,7 @@ import 'semantic-ui-css/semantic.min.css';
 import 'antd/dist/antd.css';
 import 'normalize.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 serviceWorker.unregister(); 
  

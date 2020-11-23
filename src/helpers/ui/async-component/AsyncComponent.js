@@ -1,23 +1,25 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import ReactPlaceholder from 'react-placeholder';
 import 'react-placeholder/lib/reactPlaceholder.css';
 
 class AsyncComponent extends Component {
-  state = { Component: undefined };
+  state = {Component: undefined};
+
   componentWillUnmount() {
     this.mounted = false;
   }
+
   async componentDidMount() {
     this.mounted = true;
     const componentArguement = this.props.componentArguement;
     let Component;
     switch (componentArguement) {
       case 'googleChart':
-        const { Chart: googleChart } = await this.props.load;
+        const {Chart: googleChart} = await this.props.load;
         Component = googleChart;
         break;
       default:
-        const { default: newComponent } = await this.props.load;
+        const {default: newComponent} = await this.props.load;
         Component = newComponent;
     }
     if (this.mounted) {
@@ -28,7 +30,7 @@ class AsyncComponent extends Component {
   }
 
   render() {
-    const Component = this.state.Component || <div />;
+    const Component = this.state.Component || <div/>;
     return (
       <ReactPlaceholder type="text" rows={7} ready={Component !== undefined}>
         {Component}

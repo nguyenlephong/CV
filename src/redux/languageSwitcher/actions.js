@@ -1,5 +1,5 @@
-import { getCurrentLanguage } from 'containers/language-switcher/config';
-import {changeLang} from 'containers/language-switcher/config';
+import {changeLang, getCurrentLanguage} from 'containers/language-switcher/config';
+
 const actions = {
   CHANGE_LANGUAGE: 'CHANGE_LANGUAGE',
   ACTIVATE_LANG_MODAL: 'ACTIVATE_LANG_MODAL',

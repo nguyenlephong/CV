@@ -1,136 +1,137 @@
 .cv-content-profile__sumary {
-    font-size: 1.25rem;
-    font-weight: 450;
+  font-size: 1.25rem;
+  font-weight: 450;
 
-    .pf-summary__title {
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        font-weight: bold;
-        color: #0c278c
+  .pf-summary__title {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+    color: #0c278c
+  }
+
+  .pf-summary__block_description {
+    text-indent: 20px;
+    margin: 10px 0;
+    color: black;
+    font-weight: 520;
+
+    .pf-summary__strong {
+      margin-left: 40px;
+      text-indent: 0px;
     }
 
-    .pf-summary__block_description {
-        text-indent: 20px;
-        margin: 10px 0;
-        color: black;
-        font-weight: 520;
+    .pf-summary__description {
+      line-height: 1.5rem;
 
-        .pf-summary__strong {
-            margin-left: 40px;
-            text-indent: 0px;
-        }
-
-        .pf-summary__description {
-            line-height: 1.5rem;
-            
-        }
-
-        .pf-summary__title-description {
-            text-indent: 0px;
-            border-bottom: 3px double;
-        }
     }
+
+    .pf-summary__title-description {
+      text-indent: 0px;
+      border-bottom: 3px double;
+    }
+  }
 }
 
 .cv-content-profile__skill {
-    .pf-skill__title {
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        font-weight: bold;
-        color: #0c278c ;
+  .pf-skill__title {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+    color: #0c278c;
 
-        .pf-skill__hardskill {
-            
-        }
+    .pf-skill__hardskill {
+
     }
+  }
 }
 
 .cv-content-project {
 
-    .pf-summary__title {
-        text-transform: uppercase;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-        font-weight: bold;
-        color: #0c278c
-    }
-    
-    .project__text-description {
-        font-size: 1.25rem;
-        font-weight: 450;
-    }
+  .pf-summary__title {
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    font-weight: bold;
+    color: #0c278c
+  }
 
-    .vertical-timeline-element-title {
-        font-size: 1.75rem;
-        font-weight: bold;
-    }
-    
-    .vertical-timeline-element-subtitle {
-        font-size: 1.55rem;
-        font-weight: 500;
-    }
-    
-    .vertical-timeline-element-date {
-        font-size: 1.5rem !important;
-        font-weight: bold;
-    }
+  .project__text-description {
+    font-size: 1.25rem;
+    font-weight: 450;
+  }
+
+  .vertical-timeline-element-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .vertical-timeline-element-subtitle {
+    font-size: 1.55rem;
+    font-weight: 500;
+  }
+
+  .vertical-timeline-element-date {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+  }
 }
 
 
-.content-block_language{
-    display: flex !important;
+.content-block_language {
+  display: flex !important;
 
-    .img-description {
-        text-align: center;
-    }
+  .img-description {
+    text-align: center;
+  }
 
-    .text-description {
-       margin-top: 20px !important;
-       font-size: 1.25rem;
-       font-weight: 520;
-       color: #000
-    }
+  .text-description {
+    margin-top: 20px !important;
+    font-size: 1.25rem;
+    font-weight: 520;
+    color: #000
+  }
 
 }
 
 @media only screen and (max-width: 1080px) {
-    .content-block_language {
-      flex-direction: column;
-    }
+  .content-block_language {
+    flex-direction: column;
+  }
 
-    .img-description {
-        text-align: center;
-    }
+  .img-description {
+    text-align: center;
+  }
 }
 
 
 .left {
-    left: 150% !important;
+  left: 150% !important;
 }
 
 .right {
-    right: 150% !important;
+  right: 150% !important;
 }
 
 .cv-content_link {
-    font-size: 1.25rem;
-    font-weight: 450;
-    .link__title-description {
-        margin-left: 20px;
+  font-size: 1.25rem;
+  font-weight: 450;
 
-    }
+  .link__title-description {
+    margin-left: 20px;
 
-    .link__strong {
-        color: black;
-        text-decoration: gray;
-        margin-left: 20px;
-    }
+  }
+
+  .link__strong {
+    color: black;
+    text-decoration: gray;
+    margin-left: 20px;
+  }
 }
 
 .btn-group__profile {
-    display: flex;
-    @media only screen and (max-width: 640px) {
-        flex-direction: column;
-        margin-bottom: 5px;
-    }
+  display: flex;
+  @media only screen and (max-width: 640px) {
+    flex-direction: column;
+    margin-bottom: 5px;
+  }
 }
 

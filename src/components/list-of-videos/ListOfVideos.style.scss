@@ -1,16 +1,16 @@
 .list-of-video_wrapper {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 12px;
 
-    .item_videos {
-        margin-right: 24px;
-        margin-bottom: 24px;
-    }
+  .item_videos {
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
 
-    .item_videos:fullscreen {
-        background-size: contain;
-    }
+  .item_videos:fullscreen {
+    background-size: contain;
+  }
 }

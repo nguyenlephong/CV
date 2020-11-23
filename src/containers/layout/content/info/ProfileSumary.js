@@ -90,6 +90,10 @@ class ProfileSumary extends React.Component {
             <Icon color={colorIconCheck} name={iconNameCheck}/>
             <IntlMessages id={'topbar.profile.description.strengths.description9'}/>.
           </div>
+          <div className="pf-summary__strong">
+            <Icon color={colorIconCheck} name={iconNameCheck}/>
+            <IntlMessages id={'topbar.profile.description.strengths.description10'}/>.
+          </div>
         </div>
         <div className="pf-summary__block_description">
                     <span className="pf-summary__title-description">

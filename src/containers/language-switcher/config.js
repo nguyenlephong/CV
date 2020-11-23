@@ -1,4 +1,4 @@
-import { language } from '../../settings';
+import {language} from '../../settings';
 
 import englishLang from 'images/image-cpn/flag/uk.svg';
 import chineseLang from 'images/image-cpn/flag/china.svg';
@@ -7,8 +7,8 @@ import frenchLang from 'images/image-cpn/flag/france.svg';
 import italianLang from 'images/image-cpn/flag/italy.svg';
 
 let defaultLang = language;
-export const changeLang = (lang) =>{
-  return defaultLang= lang;
+export const changeLang = (lang) => {
+  return defaultLang = lang;
 }
 
 const config = {
@@ -17,13 +17,13 @@ const config = {
     {
       languageId: 'Vietnamese',
       locale: 'vi',
-      text: 'Việt Nam', 
+      text: 'Việt Nam',
       icon: englishLang,
     },
     {
       languageId: 'english',
       locale: 'en',
-      text: 'English', 
+      text: 'English',
       icon: englishLang,
     },
     {
@@ -62,4 +62,5 @@ export function getCurrentLanguage(lang) {
   });
   return selecetedLanguage;
 }
+
 export default config;

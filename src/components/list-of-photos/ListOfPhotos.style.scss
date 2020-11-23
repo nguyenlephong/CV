@@ -1,23 +1,23 @@
 .list-of-photo_wrapper {
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    // justify-content: space-between;
-    margin-top: 12px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  // justify-content: space-between;
+  margin-top: 12px;
 
-    // 4:3
-    .item_photos {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 200px;
-        height: 267px;
-        margin-right: 24px;
-        margin-bottom: 24px;
-    }
+  // 4:3
+  .item_photos {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    height: 267px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
 
-    .item_photos:fullscreen {
-        background-size: contain;
-    }
+  .item_photos:fullscreen {
+    background-size: contain;
+  }
 }

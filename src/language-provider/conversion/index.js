@@ -20,8 +20,9 @@ export function getKeys(object) {
     variables
   };
 }
+
 export function getValues(enMessages) {
-  const { keys, variables } = getKeys(enMessages);
+  const {keys, variables} = getKeys(enMessages);
   const langs = [english, ch, fr, ital, span, arab];
   const langsNm = ['eng', 'ch', 'fr', 'ital', 'span', 'arab'];
   langs.forEach((lang, ii) => {

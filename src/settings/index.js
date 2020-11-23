@@ -1,6 +1,6 @@
 export default {
   apiUrl: 'http://yoursite.com/api/',
-  API_URL_S : 'https://localhost:5001/api',
+  API_URL_S: 'https://localhost:5001/api',
   version: '2.0'
 };
 
@@ -27,5 +27,5 @@ export {
 };
 
 export const frontPageConfig = {
-  baseUrl:'/front'
+  baseUrl: '/front'
 }

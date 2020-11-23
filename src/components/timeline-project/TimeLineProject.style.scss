@@ -1,22 +1,23 @@
-.time-line_project{
-    margin-top: 24px;
-    .content-body-timeline-item {
-        padding: 0 12px;
+.time-line_project {
+  margin-top: 24px;
 
-        .vertical-timeline-element-title {
-            font-size: 1.75rem;
-            font-weight: bold;
-        }
-        
-        .vertical-timeline-element-subtitle {
-            font-size: 1.55rem;
-            font-weight: 500;
-        }
-        
-        .vertical-timeline-element-date {
-            font-size: 1.5rem !important;
-            font-weight: bold;
-        }
+  .content-body-timeline-item {
+    padding: 0 12px;
+
+    .vertical-timeline-element-title {
+      font-size: 1.75rem;
+      font-weight: bold;
     }
+
+    .vertical-timeline-element-subtitle {
+      font-size: 1.55rem;
+      font-weight: 500;
+    }
+
+    .vertical-timeline-element-date {
+      font-size: 1.5rem !important;
+      font-weight: bold;
+    }
+  }
 
 }

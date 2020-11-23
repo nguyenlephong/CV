@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, {Component} from 'react';
+import {connect} from 'react-redux';
 import Modal from '../../components/feedback/modal';
 import Button from '../../components/uielements/button';
 import actions from '../../redux/languageSwitcher/actions';
 import config from './config';
 
-const { switchActivation, changeLanguage } = actions;
+const {switchActivation, changeLanguage} = actions;
 
 class LanguageSwitcher extends Component {
   render() {
@@ -30,7 +30,7 @@ class LanguageSwitcher extends Component {
         >
           <div>
             {config.options.map(option => {
-              const { languageId, text } = option;
+              const {languageId, text} = option;
               const type =
                 languageId === language.languageId ? 'primary' : 'success';
               return (
@@ -56,5 +56,5 @@ export default connect(
   state => ({
     ...state.LanguageSwitcher
   }),
-  { switchActivation, changeLanguage }
+  {switchActivation, changeLanguage}
 )(LanguageSwitcher);
