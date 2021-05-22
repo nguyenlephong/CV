@@ -9,7 +9,7 @@
     "gh-pages": "^3.1.0",
     "history": "^4.7.2",
     "jquery": "^3.3.1",
-    "lodash": "^4.17.21",
+    "lodash": "4.17.21",
     "node-sass": "^4.11.0",
     "normalize.css": "^8.0.1",
     "nprogress": "^0.2.0",
