@@ -74,7 +74,7 @@ export default class TimelineComponent extends React.Component {
                 src="https://www.youtube.com/embed/WCy_2q4zrWY"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen/>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={<Icon type="clock-circle-o" style={{fontSize: '32px'}}/>} color="green">
@@ -82,7 +82,7 @@ export default class TimelineComponent extends React.Component {
               <span className="vertical-timeline-element-date right"><IntlMessages
                 id={'topbar.project_splus.date'}/></span>
               <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_splus.title'}/></h3>
-              <h4 className="vertical-timeline-element-subtitle"></h4>
+              <div className="vertical-timeline-element-subtitle"/>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={<Icon type="clock-circle-o" style={{fontSize: '32px'}}/>} color="green">
@@ -108,7 +108,7 @@ export default class TimelineComponent extends React.Component {
                 src="https://www.youtube.com/embed/ZuUbsIkwUIg"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen/>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={<Icon type="clock-circle-o" style={{fontSize: '32px'}}/>} color="green">
@@ -116,7 +116,7 @@ export default class TimelineComponent extends React.Component {
               <span className="vertical-timeline-element-date right"><IntlMessages
                 id={'topbar.project_propsplus.date'}/></span>
               <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_propsplus.title'}/></h3>
-              <h4 className="vertical-timeline-element-subtitle"></h4>
+              <div className="vertical-timeline-element-subtitle"/>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={<Icon type="clock-circle-o" style={{fontSize: '32px'}}/>} color="green">
@@ -157,7 +157,7 @@ export default class TimelineComponent extends React.Component {
                 src="https://www.youtube.com/embed/uPdjFb_IDzg"
                 frameborder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen/>
             </div>
           </Timeline.Item>
           <Timeline.Item dot={<Icon type="clock-circle-o" style={{fontSize: '32px'}}/>} color="green">
@@ -179,7 +179,7 @@ export default class TimelineComponent extends React.Component {
               <span className="vertical-timeline-element-date right"><IntlMessages
                 id={'topbar.project_start.date'}/></span>
               <h3 className="vertical-timeline-element-title"><IntlMessages id={'topbar.project_start.title'}/></h3>
-              <h4 className="vertical-timeline-element-subtitle"></h4>
+              <div className="vertical-timeline-element-subtitle"/>
             </div>
           </Timeline.Item>
         </Timeline>
