@@ -1,5 +1,5 @@
 {
-  "name": "CV",
+  "name": "cv",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -32,6 +32,7 @@
     "semantic-ui-react": "^0.84.0"
   },
   "scripts": {
+    "commit": "sh scripts/commit.sh",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
