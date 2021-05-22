@@ -7,7 +7,7 @@ export default {
 const siteConfig = {
   siteName: 'PROPILE',
   siteIcon: 'ion-flash',
-  footerText: 'Nguyễn Lê Phong @2019 design by CV',
+  footerText: 'Nguyễn Lê Phong',
 };
 
 const jwtConfig = {

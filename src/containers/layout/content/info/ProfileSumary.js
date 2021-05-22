@@ -17,19 +17,19 @@ class ProfileSumary extends React.Component {
     colorIconCheck: 'green',
     iconNameCheck: 'check'
   }
-
+  
   closeConfigShow = (closeOnEscape, closeOnDimmerClick) => () => {
     this.setState({closeOnEscape, closeOnDimmerClick, open: true})
   }
-
+  
   closeConfigShowDeCuong = (closeOnEscape, closeOnDimmerClick) => () => {
     this.setState({closeOnEscape, closeOnDimmerClick, openDeCuong: true})
   }
-
+  
   close = () => this.setState({open: false})
-
+  
   closeDeCuong = () => this.setState({openDeCuong: false})
-
+  
   render() {
     const {
       // open, openDeCuong ,
@@ -37,18 +37,18 @@ class ProfileSumary extends React.Component {
       colorIcon, iconName,
       iconNameCheck, colorIconCheck
     } = this.state;
-
+    
     return (
       <div className="cv-content-profile__sumary">
-
+        
         <h2 className="pf-summary__title"><IntlMessages id={'topbar.profile.title'}/></h2>
-
+        
         <div className="pf-summary__block_description">
                     <span className="pf-summary__description">
                         <IntlMessages id={'topbar.profile.description.summary'}/>
                     </span>
         </div>
-
+        
         <div className="pf-summary__block_description">
                     <span className="pf-summary__title-description">
                         <Icon color={colorIcon} name={iconName}/><strong><IntlMessages
@@ -131,13 +131,13 @@ class ProfileSumary extends React.Component {
             <IntlMessages id={'topbar.profile.description.hobby.description3'}/>.
           </div>
         </div>
-
+        
         <div className="pf-summary__block_description">
                     <span className="pf-summary__title-description">
                         <Icon color={colorIcon} name={iconName}/>  <strong><IntlMessages
                       id={'topbar.profile.description.some_photo'}/>:</strong>
                     </span>
-
+          
           <ImageGalleryComponent/>
         </div>
         <div className="pf-summary__block_description">
@@ -145,13 +145,13 @@ class ProfileSumary extends React.Component {
                         <Icon color={colorIcon} name={iconName}/>  <strong><IntlMessages
                       id={'topbar.profile.description.some_video'}/>:</strong>
                     </span>
-
+          
           <VideoGalleryComponent/>
         </div>
         {/* <div className="pf-summary__block_description">
                     <ImageGallery />
                 </div> */}
-
+        
         {/* <div className="pf-summary__block_description">
                     <div className="btn-group__profile">
                         <Button color='brown' onClick={this.closeConfigShow(true, false)}>Xem bảng điểm</Button>
@@ -207,7 +207,7 @@ class ProfileSumary extends React.Component {
                     </Modal>
                     
                 </div> */}
-
+      
       </div>
     );
   }
