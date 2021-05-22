@@ -13,7 +13,7 @@ class Contact extends React.Component {
         email: 'nguyenlephong1997@gmail.com',
         emailStudent: '15130136@st.hcmuaf.edu.vn',
         skype: '0985490107',
-        address: 'Nguyễn Oanh, quận Gò Vấp'
+        address: 'Nguyen Huu Canh, Binh Thanh'
       }
     };
   }
