@@ -140,13 +140,14 @@ class ProfileSumary extends React.Component {
           
           <ImageGalleryComponent/>
         </div>
+        
         <div className="pf-summary__block_description">
                     <span className="pf-summary__title-description">
                         <Icon color={colorIcon} name={iconName}/>  <strong><IntlMessages
                       id={'topbar.profile.description.some_video'}/>:</strong>
                     </span>
           
-          <VideoGalleryComponent/>
+          {/*<VideoGalleryComponent/>*/}
         </div>
         {/* <div className="pf-summary__block_description">
                     <ImageGallery />
